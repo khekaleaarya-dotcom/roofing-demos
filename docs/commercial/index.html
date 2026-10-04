@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heartland Commercial Roofing — TPO, EPDM &amp; Metal Systems | Wichita, KS</title>
+<meta name="description" content="Commercial low-slope roofing for warehouses, retail and offices: TPO, EPDM, modified bitumen, coatings and preventative maintenance. Serving Kansas and Oklahoma.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RoofingContractor",
+ "name":"Heartland Commercial Roofing","telephone":"+1-316-555-0177",
+ "address":{"@type":"PostalAddress","streetAddress":"2210 W 21st St N",
+ "addressLocality":"Wichita","addressRegion":"KS","postalCode":"67204"},
+ "areaServed":["Wichita","Tulsa","Oklahoma City","Salina","Hutchinson","Enid"],
+ "priceRange":"$$"}
+</script>
+<style>
+:root{
+  --ink:#0d1b26; --steel:#22384a; --slate:#41586c; --muted:#71879a;
+  --accent:#e8710a; --accent-dk:#c25c05; --steel-l:#8fa6b8;
+  --line:#dfe6ec; --bg:#f4f7f9; --white:#fff;
+  --r:8px; --shadow:0 10px 30px rgba(13,27,38,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);background:var(--white)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1150px,92%);margin:0 auto}
+/* top bar */
+.topbar{background:var(--ink);color:#b8c6d2;font-size:13.5px;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar b{color:#fff}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .n{font-size:18px;font-weight:800;letter-spacing:-.2px;line-height:1.1}
+.logo .n span{display:block;font-size:10px;font-weight:700;letter-spacing:2px;
+  color:var(--accent);text-transform:uppercase}
+nav ul{display:flex;gap:24px;list-style:none}
+nav a{font-size:14.5px;font-weight:600;color:var(--slate);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hdr-cta{display:flex;align-items:center;gap:14px}
+.tel{font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:var(--r);font-weight:700;
+  font-size:14.5px;text-decoration:none;border:0;cursor:pointer;transition:.15s;min-height:46px}
+.btn-p{background:var(--accent);color:#fff}
+.btn-p:hover{background:var(--accent-dk)}
+.btn-o{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4)}
+.btn-o:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn-o2{background:#fff;color:var(--ink);border:2px solid var(--line)}
+.btn-o2:hover{border-color:var(--accent);color:var(--accent)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px 0;border-radius:2px}
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden;
+  background:linear-gradient(120deg,#0d1b26 0%,#16303f 60%,#1d4258 100%)}
+.hero:after{content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(-55deg,transparent 0 46px,rgba(255,255,255,.03) 46px 48px)}
+.hero .wrap{position:relative;z-index:2;padding:70px 0 76px;display:grid;
+  grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(30px,4.2vw,46px);line-height:1.12;font-weight:800;
+  letter-spacing:-1px;margin-top:14px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.sub{margin:16px 0 24px;color:#bccbd8;font-size:17px;max-width:54ch}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px;
+  border-top:1px solid rgba(255,255,255,.15);padding-top:22px}
+.statrow b{display:block;font-size:21px;color:#fff}
+.statrow span{font-size:12.5px;color:#93a8b9}
+/* spec card */
+.spec{background:#fff;color:var(--ink);border-radius:10px;padding:24px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.spec h3{font-size:18px;font-weight:800}
+.spec p.sm{font-size:13px;color:var(--muted);margin:6px 0 14px}
+.field{margin-bottom:10px}
+.field label{display:block;font-size:12px;font-weight:700;color:var(--slate);margin-bottom:4px}
+.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1.5px solid var(--line);
+  border-radius:7px;font:inherit;font-size:14.5px;min-height:44px;background:#fbfcfd}
+.field input:focus,.field select:focus{outline:0;border-color:var(--accent);background:#fff}
+.spec .btn{width:100%}
+/* sections */
+section{padding:72px 0}
+h2{font-size:clamp(25px,3vw,34px);font-weight:800;letter-spacing:-.7px}
+.lead{color:var(--slate);font-size:16.5px;margin-top:12px;max-width:64ch}
+.center{text-align:center}.center .lead{margin-inline:auto}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+/* system cards */
+.sys{border:1px solid var(--line);border-radius:var(--r);padding:24px;background:#fff;transition:.18s}
+.sys:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.sys .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;
+  text-transform:uppercase;color:var(--accent);border:1.5px solid var(--accent);
+  border-radius:5px;padding:3px 8px;margin-bottom:12px}
+.sys h3{font-size:16.5px;font-weight:800;margin-bottom:6px}
+.sys p{font-size:14px;color:var(--muted)}
+.sys ul{margin-top:10px;padding-left:18px;font-size:13.5px;color:var(--slate)}
+.sys li{margin-bottom:4px}
+/* process */
+.proc{background:var(--bg)}
+.step{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border:0}
+.num{flex:none;width:42px;height:42px;border-radius:8px;background:var(--ink);color:#fff;
+  display:grid;place-items:center;font-weight:800;font-size:16px}
+.step h4{font-size:16px;font-weight:800}
+.step p{font-size:14px;color:var(--muted)}
+/* gallery */
+.shot{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.shot .ph{aspect-ratio:16/9;overflow:hidden;position:relative}
+.shot .cap{padding:13px 15px}
+.shot .cap b{display:block;font-size:14px;font-weight:800}
+.shot .cap span{font-size:12.5px;color:var(--muted)}
+.tagl{position:absolute;left:10px;top:10px;background:rgba(13,27,38,.85);color:#fff;
+  font-size:10.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;
+  padding:4px 9px;border-radius:5px}
+/* maintenance band */
+.maint{background:var(--ink);color:#fff}
+.maint h2{color:#fff}
+.maint .lead{color:#b8c6d2}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.mcard{border:1px solid rgba(255,255,255,.15);border-radius:var(--r);padding:22px;
+  background:rgba(255,255,255,.04)}
+.mcard h4{font-size:15.5px;font-weight:800;color:#fff;margin-bottom:8px}
+.mcard p{font-size:13.5px;color:#a9bccb}
+.mcard .price{display:block;margin-top:12px;font-size:13px;color:var(--accent);font-weight:800}
+/* testimonials */
+.q{border:1px solid var(--line);border-radius:var(--r);padding:24px;background:#fff}
+.q p{font-size:14.5px;color:var(--slate);line-height:1.7;margin-bottom:14px}
+.q b{font-size:14px}
+.q span{display:block;font-size:12.5px;color:var(--muted)}
+/* cta band */
+.band{background:linear-gradient(120deg,var(--accent),#f28c2e);color:#fff;text-align:center}
+.band h2{color:#fff}
+.band p{color:#ffe9d6;margin:12px auto 24px;max-width:58ch}
+.band .btn-o2{border-color:#fff;color:var(--accent-dk)}
+.band .tel{color:#fff;font-size:19px}
+/* footer */
+footer{background:var(--ink);color:#9db0bd;padding:56px 0 24px;font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:34px}
+footer h5{color:#fff;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:12px}
+footer ul{list-style:none}footer li{margin-bottom:8px}
+footer a{text-decoration:none;color:#9db0bd}footer a:hover{color:#fff}
+.fbot{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);
+  font-size:12.5px;color:#7d919f;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+/* sticky mobile */
+.mcta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;
+  border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+.mcta .row{display:flex;gap:10px}
+.mcta .btn{flex:1;text-align:center;padding:13px 8px}
+@media(max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;padding:50px 0 56px;gap:32px}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .statrow{grid-template-columns:repeat(2,1fr)}
+  .mgrid{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  nav ul{display:none}.burger{display:block}
+  .hdr-cta .tel,.hdr-cta .btn{display:none}
+  .g3,.g2{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  section{padding:52px 0}
+  .mcta{display:block}body{padding-bottom:72px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <div><b>24/7 emergency leak response</b> for commercial properties</div>
+  <div>Licensed &amp; insured · KS #RC-44102 · <b>(316) 555-0177</b></div>
+</div></div>
+
+<header><div class="wrap nav">
+  <a class="logo" href="#top">
+    <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+      <rect width="38" height="38" rx="7" fill="#0d1b26"/>
+      <path d="M6 24h26" stroke="#e8710a" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M9 24V14h6v10M19 24V11h6v13M29 24v-7h3v7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <path d="M6 29h26" stroke="#8fa6b8" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span class="n">Heartland<span>Commercial Roofing</span></span>
+  </a>
+  <nav><ul id="menu">
+    <li><a href="#systems">Systems</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#work">Projects</a></li>
+    <li><a href="#maintenance">Maintenance</a></li>
+    <li><a href="#reviews">Clients</a></li>
+  </ul></nav>
+  <div class="hdr-cta">
+    <a class="tel" href="tel:+13165550177">(316) 555-0177</a>
+    <a class="btn btn-p" href="#quote">Request Site Survey</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="eyebrow">Low-slope specialists · Kansas &amp; Oklahoma</span>
+    <h1>Roofs that keep warehouses, retail and offices <em>open.</em></h1>
+    <p class="sub">TPO, EPDM, modified bitumen, standing-seam retrofit and fluid-applied
+      coatings. Core-drill documentation, thermal scans and a maintenance plan with
+      every install — because a commercial roof is an asset, not an expense line.</p>
+    <div class="hero-cta">
+      <a class="btn btn-p" href="#quote">Request a Site Survey</a>
+      <a class="btn btn-o" href="tel:+13165550177">Call (316) 555-0177</a>
+    </div>
+    <div class="statrow">
+      <div><b>3.1M</b><span>sq ft under maintenance plans</span></div>
+      <div><b>220+</b><span>commercial roofs replaced</span></div>
+      <div><b>20-yr</b><span>NDA &amp; system warranties</span></div>
+      <div><b>48 hr</b><span>average survey turnaround</span></div>
+    </div>
+  </div>
+  <div class="spec" id="quote">
+    <h3>Request a Site Survey</h3>
+    <p class="sm">A project manager walks the roof, cores if needed, and delivers a written
+      scope with photos within 48 hours.</p>
+    <form onsubmit="event.preventDefault();this.innerHTML='<div style=&quot;padding:30px 4px;text-align:center&quot;><div style=&quot;font-size:18px;font-weight:800&quot;>Survey request received.</div><p style=&quot;color:#71879a;font-size:13.5px;margin-top:6px&quot;>We schedule commercial surveys Mon-Sat.</p></div>';">
+      <div class="field"><label for="c">Company</label>
+        <input id="c" type="text" required placeholder="Acme Distribution LLC"></div>
+      <div class="field"><label for="n">Your name</label>
+        <input id="n" type="text" required placeholder="Facilities Manager"></div>
+      <div class="field"><label for="p">Phone / email</label>
+        <input id="p" type="text" required placeholder="(316) 555-0100"></div>
+      <div class="field"><label for="t">Building type</label>
+        <select id="t"><option>Warehouse / distribution</option><option>Retail / strip centre</option>
+        <option>Office</option><option>Industrial / manufacturing</option>
+        <option>Multi-family</option><option>Other</option></select></div>
+      <div class="field"><label for="s">Roof size (approx sq ft)</label>
+        <input id="s" type="text" placeholder="25,000"></div>
+      <button class="btn btn-p" type="submit">Book the Survey</button>
+    </form>
+  </div>
+</div></section>
+
+<section id="systems"><div class="wrap">
+  <div class="center"><span class="eyebrow">Systems we install</span>
+  <h2>Specified to the building, not to the truck stock</h2>
+  <p class="lead">Every scope starts with core samples and a moisture survey, so the system
+    matches the deck, the climate and the hold-out period.</p></div>
+  <div class="grid g3" style="margin-top:40px">
+    <div class="sys"><span class="tag">Single-ply</span><h3>TPO 60/80-mil</h3>
+      <p>Heat-welded white membrane, the default for big-box and warehouse re-roofs.</p>
+      <ul><li>Mechanically attached or fully adhered</li><li>Energy-star reflectivity</li><li>Up to 30-yr system warranty</li></ul></div>
+    <div class="sys"><span class="tag">Single-ply</span><h3>EPDM</h3>
+      <p>Black rubber for irregular roofs and ballasted decks; excellent hail history.</p>
+      <ul><li>60/90-mil, seamed or adhered</li><li>Walkable in all seasons</li><li>Simple, repairable detailing</li></ul></div>
+    <div class="sys"><span class="tag">Asphaltic</span><h3>Modified Bitumen</h3>
+      <p>Torch or cold-adhesive SBS for roofs with heavy foot traffic and units.</p>
+      <ul><li>2-ply cap sheet, granulated</li><li>Puncture-resistant surface</li><li>Ideal under pavers &amp; decks</li></ul></div>
+    <div class="sys"><span class="tag">Metal</span><h3>Standing-Seam Retrofit</h3>
+      <p>Clip-over system installed directly over an ageing metal roof — no tear-off.</p>
+      <ul><li>26-gauge panels, Kynar finish</li><li>Adds R-value with iso board</li><li>50-yr panel life expectancy</li></ul></div>
+    <div class="sys"><span class="tag">Restoration</span><h3>Silicone Coatings</h3>
+      <p>Fluid-applied restoration that extends a serviceable roof 10-15 more years.</p>
+      <ul><li>Seals penetrations in one pass</li><li>Reflective, ponding-rated</li><li>Fraction of replacement cost</li></ul></div>
+    <div class="sys"><span class="tag">Diagnostics</span><h3>Thermal &amp; Moisture Surveys</h3>
+      <p>Infrared scans locate wet insulation so you replace squares, not roofs.</p>
+      <ul><li>IR + capacitance verification</li><li>Written report with map</li><li>Insurance-claim ready</li></ul></div>
+  </div>
+</div></section>
+
+<section class="proc" id="process"><div class="wrap">
+  <div class="center"><span class="eyebrow">How a project runs</span>
+  <h2>Documented from core to closeout</h2></div>
+  <div style="max-width:760px;margin:34px auto 0">
+    <div class="step"><span class="num">1</span><div><h4>Survey &amp; cores</h4>
+      <p>Deck type, wet insulation, drain count, penetrations. Photos of every elevation.</p></div></div>
+    <div class="step"><span class="num">2</span><div><h4>Written scope, three options</h4>
+      <p>Restore, overlay or replace — each priced with lifecycle cost, not just sticker price.</p></div></div>
+    <div class="step"><span class="num">3</span><div><h4>Schedule around your operations</h4>
+      <p>Night and weekend crews, crane coordination, OSHA site plans, tenant notices.</p></div></div>
+    <div class="step"><span class="num">4</span><div><h4>Install with daily logs</h4>
+      <p>Foreman photos, weld testing, fastener counts — shared to a link you can open anytime.</p></div></div>
+    <div class="step"><span class="num">5</span><div><h4>Closeout &amp; maintenance plan</h4>
+      <p>Warranties registered, as-built drawings, and a twice-yearly inspection calendar.</p></div></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="center"><span class="eyebrow">Recent commercial work</span>
+  <h2>Flat, low-slope and metal — before &amp; after</h2></div>
+  <div class="grid g3" style="margin-top:38px">
+    <div class="shot"><div class="ph"><span class="tagl">Before</span>
+      <svg viewBox="0 0 400 225" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="225" fill="#9aa5ad"/><rect y="120" width="400" height="105" fill="#6b757d"/>
+        <rect x="40" y="60" width="320" height="60" fill="#818c94"/>
+        <g fill="#5d676f"><rect x="70" y="76" width="34" height="22" rx="3"/><rect x="150" y="70" width="30" height="28" rx="3"/><rect x="240" y="78" width="40" height="20" rx="3"/><rect x="310" y="72" width="26" height="26" rx="3"/></g>
+        <ellipse cx="180" cy="150" rx="46" ry="14" fill="#4a545c" opacity=".8"/>
+        <ellipse cx="300" cy="170" rx="30" ry="10" fill="#4a545c" opacity=".7"/>
+        <path d="M120 140h60M250 165h50" stroke="#3d464d" stroke-width="3"/>
+      </svg></div>
+      <div class="cap"><b>Aged BUR with ponding water</b><span>62,000 sq ft distribution centre</span></div></div>
+    <div class="shot"><div class="ph"><span class="tagl" style="background:#e8710a">After</span>
+      <svg viewBox="0 0 400 225" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="225" fill="#b9cfdd"/><rect y="120" width="400" height="105" fill="#e8eef2"/>
+        <rect x="40" y="60" width="320" height="60" fill="#f4f7f9"/>
+        <g fill="#c8d4dc"><rect x="70" y="76" width="34" height="22" rx="3"/><rect x="150" y="70" width="30" height="28" rx="3"/><rect x="240" y="78" width="40" height="20" rx="3"/><rect x="310" y="72" width="26" height="26" rx="3"/></g>
+        <g stroke="#d5dee4" stroke-width="2"><path d="M40 90h320M40 105h320"/></g>
+        <path d="M120 132h60M250 160h50" stroke="#e8710a" stroke-width="3"/>
+      </svg></div>
+      <div class="cap"><b>80-mil TPO, tapered to drains</b><span>ponding eliminated, 25-yr NDA</span></div></div>
+    <div class="shot"><div class="ph"><span class="tagl">Before</span>
+      <svg viewBox="0 0 400 225" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="225" fill="#aeb6bb"/><path d="M0 140 200 90 400 140v85H0z" fill="#a3703f"/>
+        <g stroke="#8a5c31" stroke-width="3"><path d="M60 152 200 116 340 152M60 152v73M120 136v89M200 116v109M280 136v89M340 152v73"/></g>
+        <ellipse cx="200" cy="170" rx="36" ry="12" fill="#6d4726" opacity=".8"/>
+      </svg></div>
+      <div class="cap"><b>Corroded R-panel metal, leaking fasteners</b><span>1978 manufacturing plant</span></div></div>
+    <div class="shot"><div class="ph"><span class="tagl" style="background:#e8710a">After</span>
+      <svg viewBox="0 0 400 225" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="225" fill="#9cc0d6"/><path d="M0 140 200 90 400 140v85H0z" fill="#2e4356"/>
+        <g stroke="#22303d" stroke-width="3"><path d="M60 152 200 116 340 152M60 152v73M120 136v89M200 116v109M280 136v89M340 152v73"/></g>
+        <path d="M0 140 200 90 400 140" stroke="#e8710a" stroke-width="4" fill="none"/>
+      </svg></div>
+      <div class="cap"><b>Standing-seam retrofit over iso board</b><span>zero downtime, no tear-off</span></div></div>
+    <div class="shot"><div class="ph"><span class="tagl">Coating</span>
+      <svg viewBox="0 0 400 225" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="225" fill="#8f9aa2"/><rect y="115" width="400" height="110" fill="#7a848c"/>
+        <rect x="30" y="115" width="340" height="6" fill="#e8eef2"/>
+        <path d="M30 121c60 10 120-8 180 2s110-6 160 2v100H30z" fill="#dfe7ec"/>
+        <g fill="#9aa5ad"><rect x="90" y="70" width="40" height="45" rx="3"/><rect x="250" y="64" width="36" height="51" rx="3"/></g>
+      </svg></div>
+      <div class="cap"><b>Silicone restoration, 22 mil DFT</b><span>retail plaza, 1/10th of replacement</span></div></div>
+    <div class="shot"><div class="ph"><span class="tagl">IR scan</span>
+      <svg viewBox="0 0 400 225" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="225" fill="#101c2b"/>
+        <g><rect x="30" y="30" width="340" height="165" fill="#16303f"/></g>
+        <ellipse cx="140" cy="100" rx="52" ry="30" fill="#e8710a" opacity=".85"/>
+        <ellipse cx="280" cy="150" rx="34" ry="20" fill="#f2b42e" opacity=".8"/>
+        <ellipse cx="300" cy="70" rx="20" ry="12" fill="#e8710a" opacity=".6"/>
+        <g stroke="#3f5566"><path d="M30 85h340M30 140h340"/></g>
+        <text x="40" y="208" fill="#8fa6b8" font-size="12">wet insulation flagged: 3 zones ≈ 4,200 sq ft</text>
+      </svg></div>
+      <div class="cap"><b>Thermal moisture survey</b><span>replaced 4,200 sq ft, not 60,000</span></div></div>
+  </div>
+</div></section>
+
+<section class="maint" id="maintenance"><div class="wrap">
+  <div class="center"><span class="eyebrow">Maintenance plans</span>
+  <h2>The cheapest roof is the one you maintain</h2>
+  <p class="lead">Two inspections a year, debris and drain clearing, and priority leak
+    response. Members get photo reports after every visit.</p></div>
+  <div class="mgrid">
+    <div class="mcard"><h4>Essential</h4><p>Spring &amp; fall inspections, drain clearing,
+      minor sealant work included, photo report.</p><span class="price">From $0.03 / sq ft / yr</span></div>
+    <div class="mcard"><h4>Priority</h4><p>Everything in Essential plus 48-hr leak response,
+      annual IR scan, tenant-complaint dispatch.</p><span class="price">From $0.05 / sq ft / yr</span></div>
+    <div class="mcard"><h4>Portfolio</h4><p>Multi-site dashboards, capital-planning budget
+      numbers, warranty administration for owners &amp; PMs.</p><span class="price">Custom — talk to us</span></div>
+  </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <div class="center"><span class="eyebrow">Clients</span>
+  <h2>Facility managers we keep coming back to</h2></div>
+  <div class="grid g3" style="margin-top:36px">
+    <div class="q"><p>"They cored the roof before quoting, found wet iso in two zones, and
+      priced the restore honestly. Our last contractor quoted a full tear-off."</p>
+      <b>M. Reyes</b><span>Facilities Director, 3PL warehouse — Wichita</span></div>
+    <div class="q"><p>"Night crews, zero customer impact, and the daily photo log meant I
+      never had to climb a ladder to check on anything."</p>
+      <b>D. Whitfield</b><span>Property Manager, retail plaza — Tulsa</span></div>
+    <div class="q"><p>"The maintenance plan paid for itself the first storm season. Leak
+      call Friday, patched Saturday morning."</p>
+      <b>S. Okafor</b><span>Owner, distribution campus — Oklahoma City</span></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <h2>Get a documented roof survey in 48 hours</h2>
+  <p>Core samples, moisture map, three priced options and a lifecycle recommendation.
+    No cost, no obligation — and no salesperson on your roof.</p>
+  <div class="hero-cta" style="justify-content:center">
+    <a class="btn btn-o2" href="#quote">Request Site Survey</a>
+    <a class="tel" href="tel:+13165550177">(316) 555-0177</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><div class="fgrid">
+  <div>
+    <a class="logo" href="#top" style="margin-bottom:12px">
+      <svg width="32" height="32" viewBox="0 0 38 38"><rect width="38" height="38" rx="7" fill="#e8710a"/>
+      <path d="M6 24h26" stroke="#0d1b26" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M9 24V14h6v10M19 24V11h6v13M29 24v-7h3v7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+      <span class="n" style="color:#fff">Heartland<span>Commercial Roofing</span></span></a>
+    <p>Low-slope and metal roofing for commercial buildings across Kansas and
+      Oklahoma since 2011.</p>
+    <p style="margin-top:10px">KS License #RC-44102 · $5M liability</p>
+  </div>
+  <div><h5>Systems</h5><ul>
+    <li><a href="#systems">TPO</a></li><li><a href="#systems">EPDM</a></li>
+    <li><a href="#systems">Modified Bitumen</a></li><li><a href="#systems">Metal Retrofit</a></li>
+    <li><a href="#systems">Silicone Coatings</a></li><li><a href="#systems">IR Surveys</a></li></ul></div>
+  <div><h5>Company</h5><ul>
+    <li><a href="#process">Process</a></li><li><a href="#work">Projects</a></li>
+    <li><a href="#maintenance">Maintenance Plans</a></li><li><a href="#reviews">Clients</a></li>
+    <li><a href="#quote">Site Survey</a></li></ul></div>
+  <div><h5>Contact</h5><ul>
+    <li><a href="tel:+13165550177"><b style="color:#fff">(316) 555-0177</b></a></li>
+    <li><a href="mailto:estimating@heartlandcomm.example">estimating@heartlandcomm.example</a></li>
+    <li>2210 W 21st St N<br>Wichita, KS 67204</li>
+    <li>Mon-Sat 7am-6pm · 24/7 emergency</li></ul></div>
+</div>
+<div class="fbot"><span>© 2026 Heartland Commercial Roofing. All rights reserved.</span>
+<span>Demo website — sample content for illustration only.</span></div>
+</div></footer>
+
+<div class="mcta"><div class="row">
+  <a class="btn btn-p" href="#quote">Site Survey</a>
+  <a class="btn btn-o2" href="tel:+13165550177">Call Now</a>
+</div></div>
+
+<script>
+(function(){var b=document.getElementById('burger'),m=document.getElementById('menu');
+if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');});}
+m&&m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('open');});})();
+</script>
+</body>
+</html>

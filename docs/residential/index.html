@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Summit Ridge Roofing — Residential Roof Repair &amp; Replacement | Tulsa, OK</title>
+<meta name="description" content="Summit Ridge Roofing: family-owned residential roof repair, replacement and storm damage restoration serving Tulsa and surrounding areas. Free estimates.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RoofingContractor",
+ "name":"Summit Ridge Roofing","telephone":"+1-918-555-0142",
+ "address":{"@type":"PostalAddress","streetAddress":"4820 S Sheridan Rd",
+ "addressLocality":"Tulsa","addressRegion":"OK","postalCode":"74145"},
+ "areaServed":["Tulsa","Broken Arrow","Owasso","Sand Springs","Bixby","Jenks"],
+ "priceRange":"$$","openingHours":"Mo-Fr 07:00-18:00"}
+</script>
+<style>
+:root{
+  --ink:#12212e; --slate:#3f5566; --muted:#6b8090;
+  --brand:#c8452b; --brand-dk:#a3341f; --gold:#e2a33c;
+  --line:#e3e9ee; --bg:#f6f8fa; --white:#fff;
+  --r:12px; --shadow:0 8px 28px rgba(18,33,46,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:0 auto}
+
+/* ---------- utility bar ---------- */
+.topbar{background:var(--ink);color:#cfd9e1;font-size:13.5px;padding:8px 0}
+.topbar .wrap{display:flex;gap:18px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.topbar b{color:#fff;font-weight:600}
+.topbar .dot{color:var(--gold)}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{flex:none}
+.logo .n{font-size:19px;font-weight:800;letter-spacing:-.2px;line-height:1.1}
+.logo .n span{display:block;font-size:10.5px;font-weight:600;letter-spacing:1.6px;
+  color:var(--brand);text-transform:uppercase}
+nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+nav a{font-size:15px;font-weight:550;color:var(--slate);text-decoration:none}
+nav a:hover{color:var(--brand)}
+.hdr-cta{display:flex;align-items:center;gap:14px}
+.tel{font-weight:800;font-size:17px;text-decoration:none;white-space:nowrap}
+.tel:hover{color:var(--brand)}
+.btn{display:inline-block;padding:13px 22px;border-radius:var(--r);font-weight:700;
+  font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:.18s;
+  min-height:46px;line-height:1.2}
+.btn-p{background:var(--brand);color:#fff;box-shadow:0 4px 14px rgba(200,69,43,.32)}
+.btn-p:hover{background:var(--brand-dk);transform:translateY(-1px)}
+.btn-o{background:#fff;color:var(--ink);border:2px solid var(--line)}
+.btn-o:hover{border-color:var(--brand);color:var(--brand)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px 0;border-radius:2px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:linear-gradient(115deg,#132430 0%,#1d3a4d 55%,#2b5468 100%);
+  color:#fff;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:0;
+  background:radial-gradient(900px 400px at 78% 18%,rgba(226,163,60,.20),transparent 62%)}
+.hero .wrap{position:relative;z-index:2;padding:74px 0 82px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:100px;
+  font-size:13px;font-weight:650;letter-spacing:.3px;margin-bottom:20px}
+.badge i{width:7px;height:7px;border-radius:50%;background:#5fd39a;display:inline-block}
+.hero h1{font-size:clamp(32px,4.6vw,50px);line-height:1.1;font-weight:800;letter-spacing:-1.2px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.sub{margin:18px 0 26px;font-size:17.5px;color:#c8d6e0;max-width:52ch}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-cta .btn-o{background:transparent;color:#fff;border-color:rgba(255,255,255,.34)}
+.hero-cta .btn-o:hover{background:#fff;color:var(--ink);border-color:#fff}
+.trustrow{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;padding-top:24px;
+  border-top:1px solid rgba(255,255,255,.16)}
+.trustrow div{font-size:13.5px;color:#a9bcc9;line-height:1.35}
+.trustrow b{display:block;color:#fff;font-size:15px;font-weight:750}
+
+/* hero form card */
+.card{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.34)}
+.card h3{font-size:20px;font-weight:800;letter-spacing:-.3px}
+.card p.sm{font-size:13.5px;color:var(--muted);margin:6px 0 16px}
+.field{margin-bottom:11px}
+.field label{display:block;font-size:12.5px;font-weight:700;color:var(--slate);
+  margin-bottom:5px;letter-spacing:.2px}
+.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1.5px solid var(--line);
+  border-radius:9px;font:inherit;font-size:15px;background:#fbfcfd;min-height:46px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--brand);background:#fff}
+.card .btn{width:100%;margin-top:4px}
+.card .fine{font-size:11.5px;color:var(--muted);text-align:center;margin-top:10px}
+.stars{color:var(--gold);letter-spacing:1.5px;font-size:15px}
+
+/* ---------- section base ---------- */
+section{padding:76px 0}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:1.8px;
+  text-transform:uppercase;color:var(--brand);margin-bottom:12px}
+h2{font-size:clamp(26px,3.2vw,36px);font-weight:800;letter-spacing:-.8px;line-height:1.18}
+.lead{color:var(--slate);font-size:17px;margin-top:14px;max-width:62ch}
+.center{text-align:center}
+.center .lead{margin-inline:auto}
+
+/* ---------- services ---------- */
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.svc{border:1px solid var(--line);border-radius:var(--r);padding:26px;background:#fff;
+  transition:.2s;position:relative}
+.svc:hover{border-color:var(--brand);box-shadow:var(--shadow);transform:translateY(-3px)}
+.svc .ic{width:46px;height:46px;border-radius:11px;background:linear-gradient(135deg,#fdeee9,#fbe1d8);
+  display:grid;place-items:center;margin-bottom:16px}
+.svc h3{font-size:17.5px;font-weight:750;margin-bottom:8px;letter-spacing:-.2px}
+.svc p{font-size:14.5px;color:var(--muted);line-height:1.6}
+
+/* ---------- why ---------- */
+.why{background:var(--bg)}
+.why .grid{grid-template-columns:repeat(2,1fr);gap:16px 46px}
+.feat{display:flex;gap:16px;align-items:flex-start;padding:16px 0}
+.chk{flex:none;width:28px;height:28px;border-radius:50%;background:var(--brand);
+  display:grid;place-items:center;margin-top:2px}
+.feat h4{font-size:16px;font-weight:750;margin-bottom:3px}
+.feat p{font-size:14.5px;color:var(--muted)}
+
+/* ---------- gallery (SVG scenes) ---------- */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.shot{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#fff}
+.shot .ph{aspect-ratio:4/3;position:relative;overflow:hidden}
+.shot .cap{padding:14px 16px}
+.shot .cap b{display:block;font-size:14.5px;font-weight:750}
+.shot .cap span{font-size:12.5px;color:var(--muted)}
+.tag{position:absolute;left:12px;top:12px;background:rgba(18,33,46,.86);color:#fff;
+  font-size:11px;font-weight:750;letter-spacing:.6px;text-transform:uppercase;
+  padding:5px 10px;border-radius:6px}
+
+/* ---------- testimonials ---------- */
+.quotes{background:var(--ink);color:#fff}
+.quotes h2{color:#fff}
+.q{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);
+  border-radius:var(--r);padding:26px}
+.q p{font-size:15.5px;color:#d6e1e9;line-height:1.7;margin:12px 0 16px}
+.q .who{display:flex;align-items:center;gap:12px}
+.av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--gold));
+  display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff}
+.q .who b{display:block;font-size:14.5px}
+.q .who span{font-size:12.5px;color:#8fa5b5}
+
+/* ---------- area ---------- */
+.area{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pill{border:1.5px solid var(--line);border-radius:100px;padding:9px 17px;font-size:14px;
+  font-weight:600;color:var(--slate);background:#fff}
+.pill:hover{border-color:var(--brand);color:var(--brand)}
+.mapbox{margin-top:30px;border-radius:var(--r);border:1px solid var(--line);overflow:hidden;
+  background:var(--bg)}
+
+/* ---------- CTA band ---------- */
+.band{background:linear-gradient(120deg,var(--brand),#e0623f);color:#fff;text-align:center}
+.band h2{color:#fff}
+.band p{color:#ffe6de;margin:12px auto 26px;max-width:56ch;font-size:17px}
+.band .btn-o{background:#fff;color:var(--brand-dk);border-color:#fff}
+.band .btn-o:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.band .tel{color:#fff;font-size:20px}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#9db0bd;padding:60px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px}
+footer h5{color:#fff;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;
+  margin-bottom:14px;font-weight:800}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer a{text-decoration:none;color:#9db0bd}
+footer a:hover{color:#fff}
+.fbot{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.11);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#7d919f}
+
+/* ---------- sticky mobile CTA ---------- */
+.mcta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;
+  border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  box-shadow:0 -6px 22px rgba(0,0,0,.10)}
+.mcta .row{display:flex;gap:10px}
+.mcta .btn{flex:1;text-align:center;padding:14px 10px;font-size:15px}
+
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;padding:52px 0 60px;gap:34px}
+  .g3,.g4{grid-template-columns:repeat(2,1fr)}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .why .grid{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  nav ul{display:none}
+  .burger{display:block}
+  .hdr-cta .tel{display:none}
+  .hdr-cta .btn{display:none}
+  .g3,.g4,.gal{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .mcta{display:block}
+  body{padding-bottom:76px}
+  .topbar .wrap{justify-content:center;text-align:center}
+}
+@media(max-width:720px) and (min-width:1px){
+  nav ul.open{display:flex;position:absolute;left:0;right:0;top:100%;background:#fff;
+    flex-direction:column;gap:0;padding:8px 0;border-bottom:1px solid var(--line);
+    box-shadow:var(--shadow)}
+  nav ul.open li{width:100%}
+  nav ul.open a{display:block;padding:14px 22px;font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="dot">●</span> <b>24/7 storm response</b> — tarping &amp; emergency repair</div>
+    <div>Licensed &amp; Insured · OK License #RC-88214 · <b>(918) 555-0142</b></div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+        <rect width="38" height="38" rx="9" fill="#c8452b"/>
+        <path d="M7 21.5 19 10l12 11.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10.5 20.5v9h17v-9" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <path d="M14.5 29.5v-5.5h4v5.5" stroke="#e2a33c" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="n">Summit Ridge<span>Roofing Co.</span></span>
+    </a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#area">Service Area</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-cta">
+      <a class="tel" href="tel:+19185550142">(918) 555-0142</a>
+      <a class="btn btn-p" href="#quote">Get Free Estimate</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="badge"><i></i> Family-owned · Serving Tulsa since 2009</span>
+      <h1>Roof problems fixed right, <em>the first time.</em></h1>
+      <p class="sub">Repairs, full replacements and storm damage restoration for homes across
+        Tulsa County. Free on-site inspection, written estimate the same day, and a
+        10-year workmanship warranty on every roof we install.</p>
+      <div class="hero-cta">
+        <a class="btn btn-p" href="#quote">Get My Free Estimate</a>
+        <a class="btn btn-o" href="tel:+19185550142">Call (918) 555-0142</a>
+      </div>
+      <div class="trustrow">
+        <div><b>4.9 ★</b>287 Google reviews</div>
+        <div><b>1,400+</b>Roofs completed</div>
+        <div><b>10 yr</b>Workmanship warranty</div>
+        <div><b>$2M</b>Liability insured</div>
+      </div>
+    </div>
+
+    <div class="card" id="quote">
+      <h3>Request Your Free Estimate</h3>
+      <p class="sm">No pressure, no obligation. We'll inspect and email you a written quote.</p>
+      <form onsubmit="event.preventDefault();this.innerHTML='<div style=&quot;padding:34px 6px;text-align:center&quot;><div style=&quot;font-size:19px;font-weight:800;color:#12212e&quot;>Thanks — request received.</div><p style=&quot;color:#6b8090;font-size:14px;margin-top:8px&quot;>A project manager will call you within one business day.</p></div>';">
+        <div class="field"><label for="n">Name</label>
+          <input id="n" name="name" type="text" required placeholder="Jane Miller" autocomplete="name"></div>
+        <div class="field"><label for="p">Phone</label>
+          <input id="p" name="phone" type="tel" required placeholder="(918) 555-0100" autocomplete="tel"></div>
+        <div class="field"><label for="z">Property ZIP</label>
+          <input id="z" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" placeholder="74145"></div>
+        <div class="field"><label for="s">What do you need?</label>
+          <select id="s" name="service">
+            <option>Roof repair (leak, missing shingles)</option>
+            <option>Full roof replacement</option>
+            <option>Storm / hail damage — insurance claim</option>
+            <option>Free roof inspection</option>
+            <option>Gutters &amp; exterior</option>
+            <option>Not sure — please advise</option>
+          </select></div>
+        <button class="btn btn-p" type="submit">Get My Free Estimate</button>
+        <p class="fine">We reply within one business day. Your details are never sold.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">What we do</span>
+      <h2>Residential roofing services</h2>
+      <p class="lead">One crew, one point of contact, from the first inspection to the final
+        magnet sweep of your driveway.</p>
+    </div>
+    <div class="grid g3" style="margin-top:42px">
+      <div class="svc">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c8452b" stroke-width="2"><path d="M3 12 12 4l9 8"/><path d="M5.5 11v8h13v-8"/></svg></div>
+        <h3>Roof Repair</h3>
+        <p>Leaks, lifted or missing shingles, flashing failures, vent boots and
+          skylight seals. Most repairs completed the same week.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c8452b" stroke-width="2"><path d="M2 13 12 4l10 9"/><path d="M4.5 12v7h15v-7"/><path d="M9 19v-4h6v4"/></svg></div>
+        <h3>Full Replacement</h3>
+        <p>Architectural shingles, metal and tile. Tear-off, deck inspection,
+          ice-and-water shield, and full disposal included.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c8452b" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Storm &amp; Hail Damage</h3>
+        <p>Emergency tarping within 24 hours, documented damage reports and
+          we meet your adjuster on-site for the insurance claim.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c8452b" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+        <h3>Free Inspections</h3>
+        <p>Drone and ladder inspection with a photo report of every elevation.
+          You get the report whether you hire us or not.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c8452b" stroke-width="2"><path d="M4 5h16v5H4z"/><path d="M6 10v9h12v-9"/></svg></div>
+        <h3>Gutters &amp; Drainage</h3>
+        <p>Seamless aluminum gutters, downspout extensions and guards — sized
+          for Oklahoma downpours, not a national spec sheet.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c8452b" stroke-width="2"><path d="M12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></svg></div>
+        <h3>Insurance Claim Help</h3>
+        <p>We handle scope documentation, supplement negotiations and
+          paperwork — you deal with one person, not a call centre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Why homeowners choose us</span>
+      <h2>Built on showing up when we say we will</h2>
+    </div>
+    <div class="grid" style="margin-top:34px">
+      <div class="feat"><span class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4"><path d="m4 12.5 5.5 5.5L20 6.5"/></svg></span>
+        <div><h4>Local crew, not a storm chaser</h4><p>Our trucks are garaged in Tulsa. When the next hailstorm hits, we answer our own phone.</p></div></div>
+      <div class="feat"><span class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4"><path d="m4 12.5 5.5 5.5L20 6.5"/></svg></span>
+        <div><h4>Written estimates, no surprise line items</h4><p>Materials, labour, disposal and permit costs are all itemised before we start.</p></div></div>
+      <div class="feat"><span class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4"><path d="m4 12.5 5.5 5.5L20 6.5"/></svg></span>
+        <div><h4>10-year workmanship warranty</h4><p>On top of the manufacturer material warranty, and it transfers if you sell the house.</p></div></div>
+      <div class="feat"><span class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4"><path d="m4 12.5 5.5 5.5L20 6.5"/></svg></span>
+        <div><h4>GAF Certified contractor</h4><p>Certified installers, so your shingle warranty stays valid instead of voiding on day one.</p></div></div>
+      <div class="feat"><span class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4"><path d="m4 12.5 5.5 5.5L20 6.5"/></svg></span>
+        <div><h4>Site cleaned with a magnet sweep</h4><p>Nails in the lawn are how roofers get bad reviews. We sweep until the detector is silent.</p></div></div>
+      <div class="feat"><span class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4"><path d="m4 12.5 5.5 5.5L20 6.5"/></svg></span>
+        <div><h4>Financing available</h4><p>12-month same-as-cash and longer terms through our lending partner, subject to approval.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Recent projects</span>
+      <h2>Before &amp; after from Tulsa-area jobs</h2>
+      <p class="lead">Replace these panels with your own job photos — real work sells
+        roofing better than any stock image.</p>
+    </div>
+    <div class="gal" style="margin-top:40px">
+      <div class="shot">
+        <div class="ph">
+          <span class="tag">Before</span>
+          <svg viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Weathered shingle roof before replacement">
+            <rect width="400" height="300" fill="#8a949c"/>
+            <path d="M0 150 200 60 400 150v150H0z" fill="#5c666d"/>
+            <g stroke="#4a545a" stroke-width="1.4" opacity=".8">
+              <path d="M40 168 200 96 360 168M60 186 200 124 340 186M80 204 200 152 320 204M100 222 200 180 300 222M120 240 200 208 280 240"/>
+            </g>
+            <ellipse cx="140" cy="196" rx="26" ry="12" fill="#3f474d" opacity=".7"/>
+            <ellipse cx="268" cy="228" rx="20" ry="9" fill="#3f474d" opacity=".6"/>
+            <path d="M182 150h36v-34l-18-14-18 14z" fill="#6f7a81"/>
+          </svg>
+        </div>
+        <div class="cap"><b>Hail-damaged architectural shingle</b><span>Brookside · 2,400 sq ft</span></div>
+      </div>
+      <div class="shot">
+        <div class="ph">
+          <span class="tag" style="background:#c8452b">After</span>
+          <svg viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="New architectural shingle roof after replacement">
+            <rect width="400" height="300" fill="#b9d3e3"/>
+            <path d="M0 150 200 60 400 150v150H0z" fill="#39434b"/>
+            <g stroke="#2b343a" stroke-width="1.6" opacity=".9">
+              <path d="M40 168 200 96 360 168M60 186 200 124 340 186M80 204 200 152 320 204M100 222 200 180 300 222M120 240 200 208 280 240"/>
+            </g>
+            <path d="M0 150 200 60 400 150" stroke="#e2a33c" stroke-width="4" fill="none"/>
+            <path d="M182 150h36v-34l-18-14-18 14z" fill="#c8452b"/>
+            <rect x="292" y="176" width="22" height="30" fill="#9fb4c2"/>
+          </svg>
+        </div>
+        <div class="cap"><b>New GAF Timberline HDZ, charcoal</b><span>Brookside · completed in 2 days</span></div>
+      </div>
+      <div class="shot">
+        <div class="ph">
+          <span class="tag">Before</span>
+          <svg viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Rusted standing seam metal roof before restoration">
+            <rect width="400" height="300" fill="#c6ccd0"/>
+            <path d="M0 160 200 70 400 160v140H0z" fill="#a3703f"/>
+            <g stroke="#8a5c31" stroke-width="3" opacity=".85">
+              <path d="M60 178 200 112 340 178M60 178v122M110 158v142M160 136v164M240 136v164M290 158v142M340 178v122"/>
+            </g>
+            <ellipse cx="200" cy="200" rx="30" ry="14" fill="#6d4726" opacity=".75"/>
+          </svg>
+        </div>
+        <div class="cap"><b>Corroded standing-seam metal</b><span>Owasso · barn &amp; workshop</span></div>
+      </div>
+      <div class="shot">
+        <div class="ph">
+          <span class="tag" style="background:#c8452b">After</span>
+          <svg viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="New standing seam metal roof after restoration">
+            <rect width="400" height="300" fill="#a8c8dc"/>
+            <path d="M0 160 200 70 400 160v140H0z" fill="#33475a"/>
+            <g stroke="#22303d" stroke-width="3">
+              <path d="M60 178 200 112 340 178M60 178v122M110 158v142M160 136v164M240 136v164M290 158v142M340 178v122"/>
+            </g>
+            <path d="M0 160 200 70 400 160" stroke="#e2a33c" stroke-width="4" fill="none"/>
+            <circle cx="330" cy="60" r="26" fill="#f2d98a" opacity=".85"/>
+          </svg>
+        </div>
+        <div class="cap"><b>26-gauge standing seam, slate blue</b><span>Owasso · 30-year panel warranty</span></div>
+      </div>
+      <div class="shot">
+        <div class="ph">
+          <span class="tag">Repair</span>
+          <svg viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Flashing repair detail around a chimney">
+            <rect width="400" height="300" fill="#9aa4ab"/>
+            <path d="M0 170 400 120v180H0z" fill="#4e585f"/>
+            <g stroke="#3d464c" stroke-width="1.5" opacity=".85">
+              <path d="M0 196 400 146M0 222 400 172M0 248 400 198M0 274 400 224"/>
+            </g>
+            <rect x="150" y="60" width="90" height="120" fill="#8d6b52"/>
+            <g stroke="#6f5140" stroke-width="2"><path d="M150 90h90M150 120h90M150 150h90"/></g>
+            <path d="M142 168h106l-8 22h-90z" fill="#b9c3ca"/>
+            <path d="M134 190h122v10H134z" fill="#c8452b"/>
+          </svg>
+        </div>
+        <div class="cap"><b>Chimney flashing &amp; counter-flashing</b><span>Cherry Street · leak resolved same day</span></div>
+      </div>
+      <div class="shot">
+        <div class="ph">
+          <span class="tag">Storm</span>
+          <svg viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Emergency tarping after storm damage">
+            <rect width="400" height="300" fill="#7d8b95"/>
+            <path d="M0 165 200 75 400 165v135H0z" fill="#4b555c"/>
+            <path d="M120 150 240 100 300 190 170 226z" fill="#2f7fc1" opacity=".92"/>
+            <g stroke="#255f90" stroke-width="2" opacity=".7"><path d="M130 168 250 118M140 190 262 138M152 212 276 158"/></g>
+            <path d="M112 152 236 100" stroke="#e2a33c" stroke-width="5" fill="none"/>
+          </svg>
+        </div>
+        <div class="cap"><b>Emergency tarping in under 24 hrs</b><span>Sand Springs · documented for the claim</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quotes" id="reviews">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow" style="color:var(--gold)">Reviews</span>
+      <h2><span class="stars">★★★★★</span> 4.9 from 287 Google reviews</h2>
+    </div>
+    <div class="grid g3" style="margin-top:40px">
+      <div class="q"><span class="stars">★★★★★</span>
+        <p>“Hail took out half our shingles in May. They tarped it that evening and
+          had the whole roof replaced before the adjuster's second visit. No runaround.”</p>
+        <div class="who"><span class="av">DM</span><div><b>Dana M.</b><span>Broken Arrow</span></div></div></div>
+      <div class="q"><span class="stars">★★★★★</span>
+        <p>“Three quotes, theirs was the only one that itemised the decking repair
+          instead of hiding it in a lump sum. Crew finished in a day and swept the yard.”</p>
+        <div class="who"><span class="av">RK</span><div><b>Ron K.</b><span>Owasso</span></div></div></div>
+      <div class="q"><span class="stars">★★★★★</span>
+        <p>“Small leak over the garage, two other companies wanted a full replacement.
+          Summit Ridge fixed the flashing for a fraction of it. That's why I referred them.”</p>
+        <div class="who"><span class="av">TL</span><div><b>Tanya L.</b><span>Jenks</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Where we work</span>
+      <h2>Serving Tulsa and surrounding areas</h2>
+      <p class="lead">Within roughly 40 miles of Tulsa we can usually inspect within
+        two business days. Not sure if you're covered? Call and ask.</p>
+    </div>
+    <div class="area" style="justify-content:center">
+      <span class="pill">Tulsa</span><span class="pill">Broken Arrow</span>
+      <span class="pill">Owasso</span><span class="pill">Sand Springs</span>
+      <span class="pill">Bixby</span><span class="pill">Jenks</span>
+      <span class="pill">Sapulpa</span><span class="pill">Claremore</span>
+      <span class="pill">Coweta</span><span class="pill">Glenpool</span>
+    </div>
+    <div class="mapbox">
+      <svg viewBox="0 0 1120 300" width="100%" height="300" role="img" aria-label="Stylised service area map centred on Tulsa">
+        <rect width="1120" height="300" fill="#eaf1f5"/>
+        <g stroke="#d3e0e8" stroke-width="1.5">
+          <path d="M0 60h1120M0 120h1120M0 180h1120M0 240h1120M140 0v300M280 0v300M420 0v300M560 0v300M700 0v300M840 0v300M980 0v300"/>
+        </g>
+        <path d="M0 205q160-30 300 10t280-20 300 30 240-15" stroke="#9fc6dc" stroke-width="9" fill="none" opacity=".75"/>
+        <circle cx="560" cy="150" r="120" fill="#c8452b" opacity=".10"/>
+        <circle cx="560" cy="150" r="78" fill="#c8452b" opacity=".16"/>
+        <circle cx="560" cy="150" r="9" fill="#c8452b"/>
+        <text x="560" y="128" text-anchor="middle" font-size="16" font-weight="800" fill="#12212e">TULSA</text>
+        <g font-size="12.5" fill="#3f5566" font-weight="600">
+          <circle cx="700" cy="128" r="5" fill="#c8452b"/><text x="712" y="132">Owasso</text>
+          <circle cx="686" cy="196" r="5" fill="#c8452b"/><text x="698" y="200">Broken Arrow</text>
+          <circle cx="432" cy="176" r="5" fill="#c8452b"/><text x="330" y="180">Sand Springs</text>
+          <circle cx="600" cy="242" r="5" fill="#c8452b"/><text x="612" y="246">Bixby</text>
+          <circle cx="524" cy="216" r="5" fill="#c8452b"/><text x="470" y="220">Jenks</text>
+          <circle cx="404" cy="112" r="5" fill="#c8452b"/><text x="346" y="106">Sapulpa</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Get a free, no-pressure roof estimate</h2>
+    <p>Call now and we'll usually have someone on your roof within two business days.
+      Emergency tarping is available 24/7 after a storm.</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn btn-o" href="#quote">Request Free Estimate</a>
+      <a class="tel" href="tel:+19185550142">(918) 555-0142</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#top" style="margin-bottom:14px">
+          <svg width="34" height="34" viewBox="0 0 38 38"><rect width="38" height="38" rx="9" fill="#c8452b"/>
+            <path d="M7 21.5 19 10l12 11.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.5 20.5v9h17v-9" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+          <span class="n" style="color:#fff">Summit Ridge<span>Roofing Co.</span></span>
+        </a>
+        <p>Family-owned residential roofing contractor serving Tulsa County,
+          Oklahoma since 2009.</p>
+        <p style="margin-top:12px">OK License #RC-88214<br>Fully licensed &amp; insured</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Roof Repair</a></li>
+          <li><a href="#services">Roof Replacement</a></li>
+          <li><a href="#services">Storm &amp; Hail Damage</a></li>
+          <li><a href="#services">Free Inspections</a></li>
+          <li><a href="#services">Gutters</a></li>
+          <li><a href="#services">Insurance Claims</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#area">Service Area</a></li>
+          <li><a href="#quote">Free Estimate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+19185550142"><b style="color:#fff">(918) 555-0142</b></a></li>
+          <li><a href="mailto:office@summitridgeroofing.example">office@summitridgeroofing.example</a></li>
+          <li>4820 S Sheridan Rd<br>Tulsa, OK 74145</li>
+          <li>Mon–Fri 7am–6pm<br>Sat 8am–2pm · 24/7 emergency</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Summit Ridge Roofing Co. All rights reserved.</span>
+      <span>Demo website — sample content for illustration only.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mcta">
+  <div class="row">
+    <a class="btn btn-p" href="#quote">Free Estimate</a>
+    <a class="btn btn-o" href="tel:+19185550142">Call Now</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  if(b&&m){b.addEventListener('click',function(){
+    var open=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+  });}
+  m&&m.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  });
+})();
+</script>
+</body>
+</html>
