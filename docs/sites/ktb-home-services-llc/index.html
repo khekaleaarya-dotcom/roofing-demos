@@ -1,350 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KTB Home Services, LLC | Roofing in Charleston, SC</title>
-<meta name="description" content="KTB Home Services, LLC - roofing repair, replacement and inspections in Charleston, SC. Free estimates.">
+<meta name="description" content="KTB Home Services, LLC - roof repair, replacement, metal roofing and storm damage in Charleston, SC. Call (877) 480-1445 for a quote.">
+<meta property="og:title" content="KTB Home Services, LLC | Roofing in Charleston, SC">
+<meta property="og:description" content="Roof repair, replacement and storm damage in Charleston, SC.">
+<meta property="og:image" content="img/biz1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=family=Fraunces:wght@400;700;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Sora:wght@400;600;800&family=Space+Grotesk:wght@400;500;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127968;</text></svg>">
 <style>
-:root{
-  --bg:#faf6ee; --bg2:#f1ead9; --fg:#221c14; --muted:#6f6455;
-  --accent:#3d6c53; --line:rgba(34,28,20,.14);
-  --disp:'Fraunces',system-ui,serif; --body:'Karla',system-ui,sans-serif;
-  --r:14px;
-}
-*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0e0b12;--ink:#f1ecf7;--mut:#a89fba;--bd:#2b2437;--soft:#171221;--ac:hsl(160 78% 58%);--f1:'Sora',sans-serif;--f2:'Karla',sans-serif;--fs:0.98;--ez:cubic-bezier(.22,1,.36,1);--ez2:cubic-bezier(.16,1,.3,1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--fg);font-family:var(--body);
-  line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-::selection{background:var(--accent);color:var(--bg)}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
+body{background:var(--bg);color:var(--ink);font-family:var(--f2);font-size:calc(16.5px * var(--fs));line-height:1.65;-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:900;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")}
 .wrap{width:min(1180px,92vw);margin:0 auto}
-
-/* grain */
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:999;
-  opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E")}
-
-/* cursor (dark themes, fine pointers) */
-.glow{position:fixed;width:340px;height:340px;border-radius:50%%;pointer-events:none;
-  z-index:0;transform:translate(-50%%,-50%%);left:0;top:0;
-  background:radial-gradient(circle,color-mix(in srgb,var(--accent) 16%%,transparent),transparent 65%%);
-  transition:opacity .4s;opacity:0;mix-blend-mode:screen}
-@media (pointer:fine){.glow.on{opacity:1}}
-
-/* nav */
-nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:.35s;
-  padding:18px 0;border-bottom:1px solid transparent}
-nav.scrolled{background:color-mix(in srgb,var(--bg) 88%%,transparent);
-  backdrop-filter:blur(14px);border-color:var(--line);padding:10px 0}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:var(--disp);font-size:clamp(15px,2.2vw,19px);letter-spacing:-.01em;
-  display:flex;align-items:center;gap:10px;font-weight:800}
-.brand svg{width:26px;height:26px;flex:none}
-.brand .dot{width:7px;height:7px;border-radius:50%%;background:var(--accent);
-  animation:pulse 2.4s infinite}
-@keyframes pulse{0%%,100%%{transform:scale(1);opacity:1}50%%{transform:scale(1.5);opacity:.5}}
-.navcta{display:flex;align-items:center;gap:14px}
-.navcta .ph{font-weight:700;font-size:14px;letter-spacing:.02em}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);
-  color:var(--bg);font-weight:800;font-size:14px;letter-spacing:.03em;
-  padding:13px 24px;border-radius:999px;border:none;cursor:pointer;
-  transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;
-  box-shadow:0 6px 24px color-mix(in srgb,var(--accent) 35%%,transparent)}
-.btn:hover{transform:translateY(-2px) scale(1.03);
-  box-shadow:0 12px 34px color-mix(in srgb,var(--accent) 45%%,transparent)}
-.btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--line);
-  box-shadow:none}
-.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
-@media(max-width:760px){.navcta .ph{display:none}}
-
-/* hero */
-.hero{min-height:100svh;display:flex;align-items:center;position:relative;
-  padding:120px 0 80px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;z-index:-1}
-.hero-bg img{width:100%%;height:100%%;object-fit:cover;opacity:.5;
-  animation:kb 26s ease-in-out infinite alternate}
-@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.14)}}
-.hero-bg::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(105deg,var(--bg) 24%,color-mix(in srgb,var(--bg) 45%,transparent) 65%,transparent)}
-.hero .wrap{position:relative;z-index:2}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;
-  font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--accent);margin-bottom:26px}
-.eyebrow::before{content:"";width:34px;height:2px;background:var(--accent);
-  transform-origin:left;animation:draw 1s .2s cubic-bezier(.2,.8,.2,1) both}
-@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-h1{font-family:var(--disp);font-weight:800;line-height:.98;
-  font-size:clamp(44px,7.4vw,104px);letter-spacing:-.03em;max-width:12ch}
-h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom}
-h1 .w>span{display:inline-block;transform:translateY(110%%);
-  animation:rise .9s cubic-bezier(.16,1,.3,1) both;
-  animation-delay:calc(.15s + var(--i)*.09s)}
+::selection{background:var(--ac);color:var(--bg)}
+#prog{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:0 50%;z-index:1000}
+nav{position:fixed;top:0;left:0;right:0;z-index:800;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px clamp(16px,4vw,40px);background:var(--bg);border-bottom:1px solid var(--bd)}
+@supports (backdrop-filter:blur(10px)){nav{background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px)}}
+.brand{font-family:var(--f1);font-size:15px;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.navcta{flex:none;display:inline-flex;align-items:center;gap:8px;background:var(--ac);color:var(--bg);text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;transition:transform .25s var(--ez)}
+.navcta:hover{transform:translateY(-2px)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;padding:150px 0 76px}
+.hero-bg{position:absolute;inset:0;z-index:0;will-change:transform}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:kb 26s ease-in-out infinite alternate}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 90%,transparent) 0%,color-mix(in srgb,var(--bg) 52%,transparent) 42%,var(--bg) 98%)}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.1)}}
+.hero-in{position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-bottom:26px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--ac)}
+h1{font-family:var(--f1);font-weight:700;font-size:clamp(54px,9.6vw,132px);line-height:.98;letter-spacing:-.025em;text-transform:uppercase}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-right:.2em}
+h1 .w>span{display:inline-block;transform:translateY(110%);animation:rise .95s var(--ez2) both}
 @keyframes rise{to{transform:translateY(0)}}
-h1 em{font-style:normal;color:var(--accent)}
-.hero-sub{max-width:46ch;color:var(--muted);font-size:clamp(16px,1.6vw,19px);
-  margin:30px 0 40px;opacity:0;animation:fadeUp .9s .85s both}
-@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-.hero-cta{display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:fadeUp .9s 1.05s both}
-.hero-stats{display:flex;gap:clamp(18px,4vw,54px);margin-top:64px;flex-wrap:wrap;
-  opacity:0;animation:fadeUp .9s 1.25s both}
-.hero-stats b{display:block;font-family:var(--disp);font-size:clamp(15px,1.7vw,18px);
-  letter-spacing:.01em}
-.hero-stats span{font-size:13px;color:var(--muted);letter-spacing:.08em;
-  text-transform:uppercase}
-.scroll-hint{position:absolute;bottom:26px;left:50%%;transform:translateX(-50%%);
-  font-size:11px;letter-spacing:.3em;color:var(--muted);text-transform:uppercase;
-  display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;
-  animation:fadeUp 1s 1.6s both}
-.scroll-hint::after{content:"";width:1px;height:44px;background:var(--line);
-  position:relative;overflow:hidden;animation:trickle 1.8s infinite}
-@keyframes trickle{0%%{box-shadow:0 -44px 0 var(--accent) inset}
-  100%%{box-shadow:0 44px 0 var(--accent) inset}}
-
-/* marquee */
-.marquee{border-block:1px solid var(--line);padding:20px 0;overflow:hidden;
-  background:var(--bg2)}
-.marquee .track{display:flex;gap:0;width:max-content;animation:mq 26s linear infinite}
-.marquee span{font-family:var(--disp);font-size:clamp(18px,2.6vw,30px);
-  padding:0 28px;white-space:nowrap;color:var(--fg);opacity:.85}
-.marquee span i{color:var(--accent);font-style:normal;padding-left:28px}
-@keyframes mq{to{transform:translateX(-50%%)}}
-
-/* sections + reveal */
-section{padding:clamp(80px,11vw,150px) 0;position:relative}
-.sec-tag{font-size:12px;font-weight:800;letter-spacing:.22em;color:var(--accent);
-  text-transform:uppercase;margin-bottom:18px;display:block}
-h2{font-family:var(--disp);font-size:clamp(32px,4.6vw,60px);line-height:1.04;
-  letter-spacing:-.025em;max-width:20ch;font-weight:800}
-.lead-p{color:var(--muted);max-width:52ch;margin-top:22px;font-size:clamp(15px,1.5vw,18px)}
-[data-rv]{opacity:0;transform:translateY(34px);
-  transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);
-  transition-delay:var(--d,0s)}
+.sub{max-width:560px;margin-top:26px;color:var(--mut);font-size:calc(17px * var(--fs))}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 34px}
+.chips span{border:1px solid var(--bd);padding:7px 15px;border-radius:999px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);transition:border-color .3s,color .3s}
+.chips span:hover{border-color:var(--ac);color:var(--ink)}
+.btnrow{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ac);color:var(--bg);text-decoration:none;padding:15px 30px;border-radius:999px;font-weight:700;font-size:16px;will-change:transform;transition:transform .3s var(--ez),box-shadow .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(0,0,0,.3)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--bd);box-shadow:none}
+.btn.ghost:hover{border-color:var(--ac)}
+.scroll-hint{position:absolute;bottom:26px;right:clamp(16px,4vw,40px);z-index:1;width:1px;height:64px;background:var(--bd)}
+.scroll-hint::after{content:"";position:absolute;top:0;left:-1px;width:3px;height:22px;background:var(--ac);animation:trickle 2.4s var(--ez) infinite}
+@keyframes trickle{0%{transform:translateY(-24px)}100%{transform:translateY(64px)}}
+.ticker{border-block:1px solid var(--bd);padding:15px 0;overflow:hidden}
+.marquee{overflow:hidden}
+.track{display:flex;width:max-content;animation:mq 32s linear infinite;will-change:transform}
+.track span{padding:0 8px;font-family:var(--f1);font-size:14.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
+.track span i{color:var(--ac);font-style:normal;padding:0 18px}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:clamp(84px,11vw,150px) 0;position:relative}
+.slabel{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--ac);margin-bottom:20px;font-weight:700}
+.slabel::after{content:"";flex:1;height:1px;background:var(--bd)}
+.mask-h{overflow:hidden}
+.mask-h>span{display:block;transform:translateY(105%);transition:transform 1s var(--ez2)}
+.mask-h.in>span{transform:translateY(0)}
+h2{font-family:var(--f1);font-weight:700;font-size:clamp(34px,5.4vw,70px);line-height:1.04;letter-spacing:-.02em}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,6vw,84px);align-items:end}
+.big{font-family:var(--f1);font-weight:600;font-size:clamp(25px,3.1vw,44px);line-height:1.28;letter-spacing:-.01em}
+.big b{color:var(--ac);font-weight:600}
+.split p{color:var(--mut);margin-top:22px;max-width:520px}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:48px}
+.b{position:relative;border:1px solid var(--bd);border-radius:18px;padding:28px 26px;grid-column:span 2;overflow:hidden;background:var(--soft);transition:transform .45s var(--ez),border-color .45s}
+.b:hover{transform:translateY(-6px);border-color:var(--ac)}
+.b:nth-child(1),.b:nth-child(2){grid-column:span 3}
+.b:nth-child(6){grid-column:span 6}
+.b .num{position:absolute;top:20px;right:22px;font-family:var(--f1);font-size:12.5px;letter-spacing:.14em;color:var(--ac)}
+.b h3{font-family:var(--f1);font-weight:600;font-size:21px;margin:14px 0 10px}
+.b p{font-size:14.5px;color:var(--mut)}
+.stack{margin-top:52px}
+.scard{position:sticky;top:calc(96px + var(--i) * 18px);border-radius:22px;overflow:hidden;border:1px solid var(--bd);margin-bottom:9vh;box-shadow:0 34px 80px rgba(0,0,0,.28)}
+.scard img{display:block;width:100%;height:min(60vh,540px);object-fit:cover}
+.scard figcaption{position:absolute;left:18px;bottom:16px;background:var(--bg);border:1px solid var(--bd);padding:8px 16px;border-radius:999px;font-size:13px;letter-spacing:.06em}
+.ba-sec .ba{position:relative;max-width:1000px;margin:48px auto 0;border-radius:22px;overflow:hidden;border:1px solid var(--bd);aspect-ratio:16/10;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .after{clip-path:inset(0 0 0 50%)}
+.ba .handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--ac);transform:translateX(-1px)}
+.ba .handle::after{content:"\2194";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--ac);color:var(--bg);display:grid;place-items:center;font-size:19px;font-weight:700}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba .tag{position:absolute;bottom:14px;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;background:var(--bg);border:1px solid var(--bd);padding:6px 12px;border-radius:999px}
+.ba .tag.l{left:14px}.ba .tag.r{right:14px}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,26px);margin-top:52px}
+.gallery figure{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--bd)}
+.gallery figure:nth-child(1){grid-column:1/6}
+.gallery figure:nth-child(2){grid-column:6/13;margin-top:44px}
+.gallery figure:nth-child(3){grid-column:1/5;margin-top:-26px}
+.gallery figure:nth-child(4){grid-column:5/10}
+.gallery figure:nth-child(5){grid-column:10/13;margin-top:30px}
+.gallery img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform 1s var(--ez)}
+.gallery figure:hover img{transform:scale(1.06)}
+.contact .inner{border:1px solid var(--bd);border-radius:26px;padding:clamp(44px,7vw,92px) clamp(24px,5vw,72px);text-align:center;background:var(--soft)}
+.contact h2{margin-bottom:18px}
+.contact .csub{color:var(--mut);max-width:520px;margin:0 auto 38px}
+.phone{font-family:var(--f1);font-weight:700;font-size:clamp(30px,4.6vw,58px);letter-spacing:-.02em;line-height:1.1}
+.phone a{color:var(--ink);text-decoration:none;transition:color .3s}
+.phone a:hover{color:var(--ac)}
+.contact .btnrow{justify-content:center;margin-top:34px}
+footer{border-top:1px solid var(--bd);padding:56px 0 44px;font-size:14px;color:var(--mut)}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px}
+.fgrid strong{display:block;color:var(--ink);font-family:var(--f1);font-weight:600;letter-spacing:.02em;margin-bottom:10px}
+footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--bd);transition:border-color .3s,color .3s}
+footer a:hover{color:var(--ac);border-color:var(--ac)}
+.fbot{margin-top:40px;padding-top:20px;border-top:1px solid var(--bd);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:850;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:1px solid var(--bd);background:var(--bg)}
+@supports (backdrop-filter:blur(10px)){.callbar{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px)}}
+.callbar a{flex:1;text-align:center;text-decoration:none;padding:13px;border-radius:12px;font-weight:700;font-size:15px}
+.callbar a.call{background:var(--ac);color:var(--bg)}
+.callbar a.mail{border:1px solid var(--bd);color:var(--ink)}
+.glow{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,color-mix(in srgb,var(--ac) 16%,transparent) 0%,transparent 62%);mix-blend-mode:screen;opacity:0;transition:opacity .6s;transform:translate(-50%,-50%);will-change:transform}
+[data-rv]{opacity:0;transform:translateY(26px);transition:opacity .85s var(--ez),transform .85s var(--ez)}
 [data-rv].in{opacity:1;transform:none}
-
-/* services */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
-  gap:18px;margin-top:56px}
-.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);
-  padding:34px 28px;position:relative;overflow:hidden;
-  transition:transform .3s,border-color .3s;transform-style:preserve-3d}
-.card:hover{border-color:color-mix(in srgb,var(--accent) 55%%,transparent)}
-.card .n{font-family:var(--disp);font-size:13px;color:var(--accent);
-  letter-spacing:.15em;margin-bottom:16px;display:block}
-.card h3{font-family:var(--disp);font-size:21px;margin-bottom:10px;letter-spacing:-.01em}
-.card p{color:var(--muted);font-size:14.5px}
-.card::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:100%%;
-  background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .4s}
-.card:hover::after{transform:scaleX(1)}
-
-/* sticky two-column about */
-.two{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,6vw,90px);
-  align-items:start;margin-top:56px}
-@media(max-width:860px){.two{grid-template-columns:1fr}}
-.sticky{position:sticky;top:110px}
-.two .panel{background:var(--bg2);border:1px solid var(--line);
-  border-radius:var(--r);padding:30px;margin-bottom:16px}
-.two .panel h3{font-family:var(--disp);font-size:19px;margin-bottom:8px}
-.two .panel p{color:var(--muted);font-size:14.5px}
-.two .panel .tick{color:var(--accent);font-weight:900;margin-right:10px}
-
-/* gallery */
-.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:56px}
-.gal figure{position:relative;overflow:hidden;border-radius:var(--r);
-  border:1px solid var(--line)}
-.gal img{width:100%%;height:100%%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
-.gal figure:hover img{transform:scale(1.06)}
-.gal figure figcaption{position:absolute;left:14px;bottom:12px;font-size:12px;
-  letter-spacing:.12em;text-transform:uppercase;color:#fff;
-  text-shadow:0 1px 8px rgba(0,0,0,.7)}
-.gal .g1{grid-column:span 7;aspect-ratio:16/10}
-.gal .g2{grid-column:span 5;aspect-ratio:4/5}
-.gal .g3{grid-column:span 4;aspect-ratio:1}
-.gal .g4{grid-column:span 4;aspect-ratio:1}
-.gal .g5{grid-column:span 4;aspect-ratio:1}
-@media(max-width:760px){.gal .g1,.gal .g2,.gal .g3,.gal .g4,.gal .g5{grid-column:span 12;aspect-ratio:4/3}}
-
-/* before/after */
-.ba{position:relative;max-width:920px;margin:56px auto 0;border-radius:var(--r);
-  overflow:hidden;border:1px solid var(--line);aspect-ratio:16/9;user-select:none}
-.ba img{position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover}
-.ba .after{clip-path:inset(0 0 0 50%%)}
-.ba .handle{position:absolute;top:0;bottom:0;left:50%%;width:3px;background:#fff;
-  z-index:3;transform:translateX(-50%%)}
-.ba .handle::after{content:"\2194";position:absolute;top:50%%;left:50%%;
-  transform:translate(-50%%,-50%%);width:46px;height:46px;border-radius:50%%;
-  background:#fff;color:#111;display:grid;place-items:center;font-size:20px;
-  box-shadow:0 4px 18px rgba(0,0,0,.35)}
-.ba .lbl{position:absolute;top:14px;z-index:2;font-size:11px;letter-spacing:.2em;
-  background:rgba(0,0,0,.55);color:#fff;padding:6px 12px;border-radius:99px}
-.ba .lbl.l{left:14px}.ba .lbl.r{right:14px}
-.ba input{position:absolute;inset:0;width:100%%;height:100%%;opacity:0;
-  cursor:ew-resize;z-index:4;margin:0}
-
-/* process */
-.steps{counter-reset:s;margin-top:56px}
-.step{display:grid;grid-template-columns:90px 1fr;gap:26px;padding:34px 0;
-  border-top:1px solid var(--line);align-items:baseline}
-.step:last-child{border-bottom:1px solid var(--line)}
-.step .num{font-family:var(--disp);font-size:clamp(34px,4vw,54px);
-  color:transparent;-webkit-text-stroke:1.5px var(--accent);line-height:1}
-.step h3{font-family:var(--disp);font-size:clamp(20px,2.4vw,27px);margin-bottom:8px}
-.step p{color:var(--muted);max-width:60ch;font-size:15px}
-
-/* area chips */
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
-.chip{border:1px solid var(--line);border-radius:99px;padding:10px 20px;
-  font-size:14px;font-weight:600;transition:.3s}
-.chip:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
-
-/* CTA */
-.cta{background:var(--bg2);border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);text-align:left}
-.cta .wrap{display:grid;grid-template-columns:1.2fr auto;gap:40px;align-items:center}
-@media(max-width:860px){.cta .wrap{grid-template-columns:1fr}}
-.roofline{width:min(520px,100%%);margin-top:10px}
-.roofline path{fill:none;stroke:var(--accent);stroke-width:2.5;
-  stroke-dasharray:1400;stroke-dashoffset:1400;transition:stroke-dashoffset 2.4s ease}
-.roofline.in path{stroke-dashoffset:0}
-
-footer{padding:54px 0 40px;font-size:14px;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer a:hover{color:var(--accent)}
-
+[data-tilt]{transform-style:preserve-3d;will-change:transform}
+[data-tilt] img{transform:translateZ(24px)}
+@media (max-width:960px){
+  .split{grid-template-columns:1fr}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .b,.b:nth-child(1),.b:nth-child(2),.b:nth-child(6){grid-column:span 1}
+  .b:nth-child(6){grid-column:span 2}
+  .gallery{grid-template-columns:repeat(6,1fr)}
+  .gallery figure:nth-child(1){grid-column:1/7}
+  .gallery figure:nth-child(2){grid-column:1/7;margin-top:0}
+  .gallery figure:nth-child(3){grid-column:1/4;margin-top:0}
+  .gallery figure:nth-child(4){grid-column:4/7}
+  .gallery figure:nth-child(5){grid-column:1/7}
+  .fgrid{grid-template-columns:1fr}
+  .scard{top:calc(84px + var(--i) * 12px)}
+}
+@media (max-width:720px){
+  .callbar{display:flex}
+  body{padding-bottom:78px}
+  .hero{min-height:92svh;padding-bottom:60px}
+}
 @media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+  *,*::before,*::after{animation:none!important;transition:none!important}
   [data-rv]{opacity:1;transform:none}
+  .mask-h>span{transform:none}
+  h1 .w>span{transform:none}
 }
 </style>
 </head>
 <body>
-
-
-<nav id="nav">
-  <div class="wrap">
-    <a class="brand" href="#top">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M2 13L12 4l10 9" stroke="#3d6c53" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 12v8h14v-8" stroke="#221c14" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      KTB Home Services, LLC <span class="dot"></span>
-    </a>
-    <div class="navcta">
-      <a class="ph" href="tel:8774801445">(877) 480-1445</a>
-      <a class="btn" data-mag href="tel:8774801445">Free Estimate</a>
-    </div>
-  </div>
+<div id="prog"></div>
+<nav>
+  <span class="brand">KTB Home Services, LLC</span>
+  <a class="navcta" href="tel:(877) 480-1445">(877) 480-1445</a>
 </nav>
-
-<header class="hero" id="top">
+<div class="glow" id="glow"></div>
+<header class="hero">
   <div class="hero-bg" data-parw="0.18"><img src="img/biz1.jpg" alt="Roofing work by KTB Home Services, LLC"></div>
-  <div class="wrap">
-    <span class="eyebrow">Charleston, SC &middot; Local Roofing Crews</span>
-    <h1><span class="w" style="--i:0"><span>HONEST</span></span> <span class="w" style="--i:1"><span>WORK,</span></span> <em><span class="w" style="--i:0"><span>BUILT</span></span> <span class="w" style="--i:1"><span>TO</span></span> <span class="w" style="--i:2"><span>LAST</span></span></em></h1>
-    <p class="hero-sub">KTB Home Services, LLC keeps Charleston roofs watertight - honest inspections, clean installs, and repairs that hold. Straight answers, no pressure, free estimates.</p>
-    <div class="hero-cta">
-      <a class="btn" data-mag href="tel:8774801445">Call (877) 480-1445</a>
-      <a class="btn ghost" href="#quote">Get My Free Estimate &rarr;</a>
-    </div>
-    <div class="hero-stats">
-      <div><b>Free Estimates</b><span>No obligation</span></div>
-      <div><b>Local Crews</b><span>Charleston based</span></div>
-      <div><b>Written Quotes</b><span>Clear pricing</span></div>
+  <div class="wrap hero-in">
+    <p class="eyebrow">Charleston, SC &middot; Local Roofing Crews</p>
+    <h1><span class="w"><span style="animation-delay:0.15s">ELEVATED</span></span> <span class="w"><span style="animation-delay:0.27s">ROOFS</span></span></h1>
+    <p class="sub">Roof repair, replacement, and storm damage &mdash; done right in Charleston.</p>
+    <div class="chips"><span>Roof Repair</span><span>Storm Damage</span><span>Metal Roofing</span><span>Inspections</span></div>
+    <div class="btnrow">
+      <a class="btn" href="tel:(877) 480-1445" data-mag>Call (877) 480-1445</a>
+      <a class="btn ghost" href="mailto:info@ktbhomeservices.com?subject=Roofing%20quote%20request" data-mag>Email for a quote</a>
     </div>
   </div>
-  <div class="scroll-hint">Scroll</div>
+  <div class="scroll-hint"></div>
 </header>
-
-<div class="marquee"><div class="track"><span>ROOF REPAIR<i>&#9670;</i></span><span>REPLACEMENT<i>&#9670;</i></span><span>STORM DAMAGE<i>&#9670;</i></span><span>FREE INSPECTIONS<i>&#9670;</i></span><span>METAL ROOFING<i>&#9670;</i></span><span>GUTTERS<i>&#9670;</i></span><span>EMERGENCY TARPING<i>&#9670;</i></span><span>FLAT ROOFS<i>&#9670;</i></span><span>ROOF REPAIR<i>&#9670;</i></span><span>REPLACEMENT<i>&#9670;</i></span><span>STORM DAMAGE<i>&#9670;</i></span><span>FREE INSPECTIONS<i>&#9670;</i></span><span>METAL ROOFING<i>&#9670;</i></span><span>GUTTERS<i>&#9670;</i></span><span>EMERGENCY TARPING<i>&#9670;</i></span><span>FLAT ROOFS<i>&#9670;</i></span></div></div>
-
-<section id="services">
-  <div class="wrap">
-    <span class="sec-tag" data-rv>What we do</span>
-    <h2 data-rv style="--d:.05s">Every roof problem, solved properly</h2>
-    <p class="lead-p" data-rv style="--d:.1s">From single-shingle repairs to full replacements, KTB Home Services, LLC handles it in-house with crews who show up when they say they will.</p>
-    <div class="grid">
-      <div class="card" data-rv style="--d:0.00s"><span class="n">01</span><h3>Roof Replacement</h3><p>Full tear-off and install with premium shingles or metal, finished in days, not weeks.</p></div><div class="card" data-rv style="--d:0.05s"><span class="n">02</span><h3>Repairs & Leak Fixes</h3><p>Fast, permanent repairs - flashed, sealed, and water-tested before we call it done.</p></div><div class="card" data-rv style="--d:0.10s"><span class="n">03</span><h3>Storm & Hail Damage</h3><p>Documented damage reports and insurance-friendly estimates after bad weather.</p></div><div class="card" data-rv style="--d:0.15s"><span class="n">04</span><h3>Free Inspections</h3><p>Photo-documented roof inspections with a straight answer on repair vs replace.</p></div><div class="card" data-rv style="--d:0.20s"><span class="n">05</span><h3>Metal Roofing</h3><p>Standing seam and metal retrofit options that shrug off decades of weather.</p></div><div class="card" data-rv style="--d:0.25s"><span class="n">06</span><h3>Gutters & Ventilation</h3><p>Clean drainage and airflow that protect the roof you just invested in.</p></div>
+<div class="ticker"><div class="marquee"><div class="track"><span>ROOF REPAIR <i>&#10022;</i></span><span>STORM DAMAGE <i>&#10022;</i></span><span>METAL ROOFING <i>&#10022;</i></span><span>RE-ROOFS <i>&#10022;</i></span><span>GUTTERS <i>&#10022;</i></span><span>ROOF REPAIR <i>&#10022;</i></span><span>STORM DAMAGE <i>&#10022;</i></span><span>METAL ROOFING <i>&#10022;</i></span><span>RE-ROOFS <i>&#10022;</i></span><span>GUTTERS <i>&#10022;</i></span></div></div></div>
+<main>
+  <section id="about">
+    <div class="wrap split">
+      <div data-rv>
+        <p class="slabel">Who we are</p>
+        <p class="big">KTB Home Services, LLC is a roofing crew based in <b>Charleston, SC</b> &mdash; repairing and replacing roofs across the area.</p>
+      </div>
+      <div data-rv style="transition-delay:.12s">
+        <p>Every roof is different, so every job starts with a proper look at it. We explain what we find, what it costs, and what happens next &mdash; before any work begins.</p>
+      </div>
     </div>
-  </div>
-</section>
-
-<section id="why" style="background:var(--bg2);border-block:1px solid var(--line)">
-  <div class="wrap two">
-    <div class="sticky">
-      <span class="sec-tag" data-rv>Why KTB</span>
-      <h2 data-rv style="--d:.05s">Built on referrals, not sales scripts</h2>
-      <p class="lead-p" data-rv style="--d:.1s">Most of our work in Charleston comes from neighbours talking to neighbours. We'd like to keep it that way.</p>
-      <svg class="roofline" data-rvview viewBox="0 0 520 120"><path d="M10 110 L120 30 L230 110 M180 110 L300 20 L420 110 M370 110 L460 45 L510 82"/></svg>
+  </section>
+  <section id="services">
+    <div class="wrap">
+      <p class="slabel">What we do</p>
+      <h2 class="mask-h" data-rv><span>Services</span></h2>
+      <div class="bento">
+        <div class="b" data-rv style="transition-delay:0.00s"><span class="num">01</span><h3>Roof Repair</h3><p>Leaks, lifted shingles, and storm damage assessed and repaired properly.</p></div><div class="b" data-rv style="transition-delay:0.06s"><span class="num">02</span><h3>Roof Replacement</h3><p>Full tear-off and replacement with quality materials and a clean job site.</p></div><div class="b" data-rv style="transition-delay:0.12s"><span class="num">03</span><h3>Storm Damage</h3><p>Hail and wind damage assessed, documented, and repaired.</p></div><div class="b" data-rv style="transition-delay:0.18s"><span class="num">04</span><h3>Metal Roofing</h3><p>Standing seam and metal roof installation and repair.</p></div><div class="b" data-rv style="transition-delay:0.24s"><span class="num">05</span><h3>Roof Inspections</h3><p>Thorough inspections with photo reports you can actually read.</p></div><div class="b" data-rv style="transition-delay:0.30s"><span class="num">06</span><h3>Gutters & Drainage</h3><p>Gutter installation and drainage that keeps water off your roof.</p></div>
+      </div>
     </div>
-    <div>
-      <div class="panel" data-rv><h3><span class="tick">&#10003;</span>Honest inspections</h3><p>We show you exactly what's wrong - photos included - and tell you when a repair is enough. No upselling storms that didn't happen.</p></div>
-      <div class="panel" data-rv style="--d:.08s"><h3><span class="tick">&#10003;</span>Clean job sites</h3><p>Tarps down, nails magnet-swept, debris hauled. Your driveway looks like we were never there - except for the new roof.</p></div>
-      <div class="panel" data-rv style="--d:.16s"><h3><span class="tick">&#10003;</span>Written everything</h3><p>Scope, materials, timeline and price in writing before we start. If it changes, you approve it first.</p></div>
-      <div class="panel" data-rv style="--d:.24s"><h3><span class="tick">&#10003;</span>Insurance-friendly</h3><p>Storm damage? We document everything insurers ask for and work with your adjuster directly.</p></div>
+  </section>
+  <section id="work">
+    <div class="wrap">
+      <p class="slabel">The work</p>
+      <h2 class="mask-h" data-rv><span>Recent projects</span></h2>
+      <div class="stack">
+        <figure class="scard" style="--i:0"><img src="img/biz1.jpg" alt="Roofing project 1 by KTB Home Services, LLC"><figcaption>Project 1 &middot; Charleston</figcaption></figure><figure class="scard" style="--i:1"><img src="img/biz2.jpg" alt="Roofing project 2 by KTB Home Services, LLC"><figcaption>Project 2 &middot; Charleston</figcaption></figure><figure class="scard" style="--i:2"><img src="img/biz3.jpg" alt="Roofing project 3 by KTB Home Services, LLC"><figcaption>Project 3 &middot; Charleston</figcaption></figure><figure class="scard" style="--i:3"><img src="img/biz4.jpg" alt="Roofing project 4 by KTB Home Services, LLC"><figcaption>Project 4 &middot; Charleston</figcaption></figure>
+      </div>
     </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <span class="sec-tag" data-rv>Recent work</span>
-    <h2 data-rv style="--d:.05s">The proof is on the rooftops</h2>
-    <div class="gal">
-      <figure class="g1" data-rv style="--d:0.00s"><img src="img/biz1.jpg" alt="Roofing project - KTB Home Services, LLC" loading="lazy"><figcaption>Charleston project</figcaption></figure><figure class="g2" data-rv style="--d:0.06s"><img src="img/biz2.jpg" alt="Roofing project - KTB Home Services, LLC" loading="lazy"><figcaption>Charleston project</figcaption></figure><figure class="g3" data-rv style="--d:0.12s"><img src="img/biz3.jpg" alt="Roofing project - KTB Home Services, LLC" loading="lazy"><figcaption>Charleston project</figcaption></figure><figure class="g4" data-rv style="--d:0.18s"><img src="img/biz4.jpg" alt="Roofing project - KTB Home Services, LLC" loading="lazy"><figcaption>Charleston project</figcaption></figure><figure class="g5" data-rv style="--d:0.24s"><img src="img/stock1.jpg" alt="Roofing project - KTB Home Services, LLC" loading="lazy"><figcaption>Charleston project</figcaption></figure>
+  </section>
+  <section class="ba-sec">
+    <div class="wrap">
+      <p class="slabel">Before &amp; after</p>
+      <h2 class="mask-h" data-rv><span>See the difference</span></h2>
+      <div class="ba" data-rv>
+        <img src="img/biz1.jpg" alt="Roof before the work">
+        <img class="after" src="img/biz2.jpg" alt="Roof after the work">
+        <div class="handle"></div>
+        <span class="tag l">Drag</span><span class="tag r">Compare</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+      </div>
     </div>
-    <div class="ba" data-rv><img src="img/biz2.jpg" alt="Project view"><div class="after"><img src="img/biz1.jpg" alt="Project detail"></div><div class="handle"></div><span class="lbl l">DRAG</span><span class="lbl r">&#8596;</span><input type="range" min="2" max="98" value="50" aria-label="Before and after slider"></div>
-  </div>
-</section>
-
-<section id="process" style="background:var(--bg2);border-block:1px solid var(--line)">
-  <div class="wrap">
-    <span class="sec-tag" data-rv>How it works</span>
-    <h2 data-rv style="--d:.05s">Four steps. Zero guesswork.</h2>
-    <div class="steps">
-      <div class="step" data-rv><span class="num">01</span><div><h3>Free inspection</h3><p>We climb up, photograph everything, and give you a straight assessment - usually the same week you call.</p></div></div>
-      <div class="step" data-rv style="--d:.06s"><span class="num">02</span><div><h3>Written quote</h3><p>Materials, scope, timeline, price. One document, no fine print, valid for 30 days.</p></div></div>
-      <div class="step" data-rv style="--d:.12s"><span class="num">03</span><div><h3>The build</h3><p>Crews arrive on schedule, protect your property, and most residential jobs finish in one to two days.</p></div></div>
-      <div class="step" data-rv style="--d:.18s"><span class="num">04</span><div><h3>Final walk-through</h3><p>We inspect together, magnet-sweep the grounds, and hand over warranty paperwork before we leave.</p></div></div>
+  </section>
+  <section id="gallery">
+    <div class="wrap">
+      <p class="slabel">Gallery</p>
+      <h2 class="mask-h" data-rv><span>Roofs we look after</span></h2>
+      <div class="gallery">
+        <figure data-rv data-tilt style="transition-delay:0.00s"><img src="img/biz1.jpg" alt="Roofing work 1"></figure><figure data-rv data-tilt style="transition-delay:0.08s"><img src="img/biz2.jpg" alt="Roofing work 2"></figure><figure data-rv data-tilt style="transition-delay:0.16s"><img src="img/biz3.jpg" alt="Roofing work 3"></figure><figure data-rv data-tilt style="transition-delay:0.24s"><img src="img/biz4.jpg" alt="Roofing work 4"></figure><figure data-rv data-tilt style="transition-delay:0.32s"><img src="img/biz5.jpg" alt="Roofing work 5"></figure>
+      </div>
     </div>
-  </div>
-</section>
-
-<section id="area">
-  <div class="wrap">
-    <span class="sec-tag" data-rv>Service area</span>
-    <h2 data-rv style="--d:.05s">Proudly roofing Charleston and nearby</h2>
-    <div class="chips">
-      <span class="chip" data-rv>Charleston</span>
-      <span class="chip" data-rv>Greater Charleston Area</span><span class="chip" data-rv>SC Surrounds</span><span class="chip" data-rv>Surrounding Communities</span><span class="chip" data-rv>Nearby Towns</span>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="inner" data-rv>
+        <h2 class="mask-h" data-rv><span>Talk to us about your roof.</span></h2>
+        <p class="csub">Call or email &mdash; we will walk your roof, explain the options, and give you clear numbers.</p>
+        <p class="phone"><a href="tel:(877) 480-1445">(877) 480-1445</a></p>
+        <div class="btnrow">
+          <a class="btn" href="tel:(877) 480-1445" data-mag>Call now</a>
+          <a class="btn ghost" href="mailto:info@ktbhomeservices.com?subject=Roofing%20quote%20request" data-mag>info@ktbhomeservices.com</a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="cta" id="quote">
-  <div class="wrap">
-    <div>
-      <span class="sec-tag" data-rv>Get started</span>
-      <h2 data-rv style="--d:.05s">Your free estimate is one call away</h2>
-      <p class="lead-p" data-rv style="--d:.1s">Tell us what's happening with your roof. We'll schedule an inspection that works around your calendar - evenings and Saturdays included.</p>
-    </div>
-    <div data-rv style="--d:.15s;display:flex;flex-direction:column;gap:14px">
-      <a class="btn" data-mag href="tel:8774801445" style="font-size:17px;padding:18px 34px">(877) 480-1445</a>
-      <a class="btn ghost" href="mailto:info@ktbhomeservices.com" style="font-size:15px">Email Us</a>
-    </div>
-  </div>
-</section>
-
+  </section>
+</main>
 <footer>
-  <div class="wrap">
-    <div><b style="font-family:var(--disp)">KTB Home Services, LLC</b><br>Charleston, SC</div>
-    <div><a href="tel:8774801445">(877) 480-1445</a><br><a href="mailto:info@ktbhomeservices.com">info@ktbhomeservices.com</a></div>
-    <div>&copy; 2026 KTB Home Services, LLC</div>
+  <div class="wrap fgrid">
+    <div><strong>KTB Home Services, LLC</strong>Proudly serving Charleston, SC and nearby communities.</div>
+    <div><strong>Call</strong><a href="tel:(877) 480-1445">(877) 480-1445</a></div>
+    <div><strong>Email</strong><a href="mailto:info@ktbhomeservices.com">info@ktbhomeservices.com</a></div>
   </div>
+  <div class="wrap fbot"><span>&copy; 2026 KTB Home Services, LLC</span><span>Charleston, SC</span></div>
 </footer>
-
+<div class="callbar">
+  <a class="call" href="tel:(877) 480-1445">Call now</a>
+  <a class="mail" href="mailto:info@ktbhomeservices.com?subject=Roofing%20quote%20request">Email</a>
+</div>
 <script>
-// reveal on scroll - with failsafes so content is never stuck invisible
-function revealAll(){document.querySelectorAll('[data-rv],[data-rvview]').forEach(el=>el.classList.add('in'));}
+function revealAll(){document.querySelectorAll('[data-rv],[data-rvview]').forEach(el=>el.classList.add('in'));document.querySelectorAll('.mask-h').forEach(el=>el.classList.add('in'));}
 try{
   if('IntersectionObserver' in window){
     const io=new IntersectionObserver(es=>es.forEach(e=>{
@@ -353,48 +256,42 @@ try{
     document.querySelectorAll('[data-rv],[data-rvview]').forEach(el=>io.observe(el));
   } else revealAll();
 }catch(err){revealAll();}
-setTimeout(()=>{document.querySelectorAll('[data-rv]:not(.in)').forEach(el=>{
+setTimeout(()=>{document.querySelectorAll('[data-rv]:not(.in),.mask-h:not(.in)').forEach(el=>{
   const r=el.getBoundingClientRect();
   if(r.top<innerHeight*1.5) el.classList.add('in');});},1200);
 addEventListener('error',revealAll);
-
-// nav state
-const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
-
-// parallax
+const prog=document.getElementById('prog');
 const pars=[...document.querySelectorAll('[data-parw]')];
 addEventListener('scroll',()=>{const y=scrollY;
+  const h=document.documentElement,m=h.scrollHeight-innerHeight;
+  if(prog){prog.style.transform=`scaleX(${m>0?Math.min(1,y/m):0})`;}
   pars.forEach(el=>{el.style.transform=`translateY(${y*parseFloat(el.dataset.parw)}px) scale(1.08)`});
 },{passive:true});
-
-// tilt cards
-document.querySelectorAll('.card').forEach(c=>{
-  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();
-    const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
-    c.style.transform=`perspective(700px) rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-4px)`});
-  c.addEventListener('mouseleave',()=>c.style.transform='');
-});
-
-// magnetic buttons
-document.querySelectorAll('[data-mag]').forEach(b=>{
-  b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();
-    b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.35}px)`});
-  b.addEventListener('mouseleave',()=>b.style.transform='');
-});
-
-// before/after slider
-const ba=document.querySelector('.ba');
-if(ba){const inp=ba.querySelector('input'),af=ba.querySelector('.after'),hd=ba.querySelector('.handle');
-  inp.addEventListener('input',()=>{const v=inp.value;
-    af.style.clipPath=`inset(0 0 0 ${v}%)`;hd.style.left=v+'%';});}
-
-// cursor glow
-const g=document.getElementById('glow');
-if(matchMedia('(pointer:fine)').matches){
-  addEventListener('mousemove',e=>{g.classList.add('on');
-    g.style.left=e.clientX+'px';g.style.top=e.clientY+'px';});
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduced){
+  const mag=document.querySelectorAll('[data-mag]');
+  mag.forEach(b=>{
+    b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();
+      b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*0.18}px,${(e.clientY-r.top-r.height/2)*0.28}px)`;});
+    b.addEventListener('mouseleave',()=>{b.style.transform='';});
+  });
+  const g=document.getElementById('glow');
+  if(g){let gx=0,gy=0,tx=0,ty=0;
+    addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY;g.style.opacity='1';});
+    (function loop(){gx+=(tx-gx)*0.07;gy+=(ty-gy)*0.07;
+      g.style.transform=`translate(${gx}px,${gy}px) translate(-50%,-50%)`;
+      requestAnimationFrame(loop);})();}
+  document.querySelectorAll('[data-tilt]').forEach(card=>{
+    card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();
+      const rx=((e.clientY-r.top)/r.height-0.5)*-7,ry=((e.clientX-r.left)/r.width-0.5)*7;
+      card.style.transform=`perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;});
+    card.addEventListener('mouseleave',()=>{card.style.transform='';});
+  });
 }
+const ba=document.querySelector('.ba');
+if(ba){const input=ba.querySelector('input'),after=ba.querySelector('.after'),handle=ba.querySelector('.handle');
+  input.addEventListener('input',()=>{const v=input.value;
+    after.style.clipPath=`inset(0 0 0 ${v}%)`;handle.style.left=v+'%';});}
 </script>
 </body>
 </html>
