@@ -237,9 +237,9 @@ footer a:hover{color:var(--accent)}
 </nav>
 
 <header class="hero" id="top">
-  <div class="hero-bg"><img src="img/biz1.jpg" alt="Roofing work by Refined Roofing Company" data-par="0.18"></div>
+  <div class="hero-bg" data-parw="0.18"><img src="img/biz1.jpg" alt="Roofing work by Refined Roofing Company"></div>
   <div class="wrap">
-    <span class="eyebrow">Gaylords Crossroads, South Carolina &middot; Licensed Roofing Crews</span>
+    <span class="eyebrow">Gaylords Crossroads, South Carolina &middot; Local Roofing Crews</span>
     <h1><span class="w" style="--i:0"><span>ELEVATED</span></span> <em><span class="w" style="--i:0"><span>ROOFS</span></span></em></h1>
     <p class="hero-sub">Refined Roofing Company keeps Gaylords Crossroads roofs watertight - honest inspections, clean installs, and repairs that hold. Straight answers, no pressure, free estimates.</p>
     <div class="hero-cta">
@@ -343,20 +343,29 @@ footer a:hover{color:var(--accent)}
 </footer>
 
 <script>
-// reveal on scroll
-const io=new IntersectionObserver(es=>es.forEach(e=>{
-  if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
-}),{threshold:.16});
-document.querySelectorAll('[data-rv],[data-rvview]').forEach(el=>io.observe(el));
+// reveal on scroll - with failsafes so content is never stuck invisible
+function revealAll(){document.querySelectorAll('[data-rv],[data-rvview]').forEach(el=>el.classList.add('in'));}
+try{
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    }),{threshold:.16,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('[data-rv],[data-rvview]').forEach(el=>io.observe(el));
+  } else revealAll();
+}catch(err){revealAll();}
+setTimeout(()=>{document.querySelectorAll('[data-rv]:not(.in)').forEach(el=>{
+  const r=el.getBoundingClientRect();
+  if(r.top<innerHeight*1.5) el.classList.add('in');});},1200);
+addEventListener('error',revealAll);
 
 // nav state
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
 
 // parallax
-const pars=[...document.querySelectorAll('[data-par]')];
+const pars=[...document.querySelectorAll('[data-parw]')];
 addEventListener('scroll',()=>{const y=scrollY;
-  pars.forEach(el=>{el.style.transform=`translateY(${y*parseFloat(el.dataset.par)}px) scale(1.05)`});
+  pars.forEach(el=>{el.style.transform=`translateY(${y*parseFloat(el.dataset.parw)}px) scale(1.08)`});
 },{passive:true});
 
 // tilt cards
