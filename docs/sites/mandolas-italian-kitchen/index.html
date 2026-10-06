@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mandola's Italian Kitchen | Fresh Italian, Every Day</title>
+<meta name="description" content="Fast-casual Italian kitchen - handmade pasta, wood-fired pizza, panini, salads and house-made desserts. Locations in the Tampa Bay area and Austin, TX.">
+<meta property="og:title" content="Mandola's Italian Kitchen | Fresh Italian, Every Day">
+<meta property="og:image" content="img/biz1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127837;</text></svg>">
+<style>
+:root{--bg:#faf3e8;--ink:#241a12;--mut:#6d5c4a;--bd:#e6d8c3;--soft:#f3e9d8;--ac:#b63a26;--ol:#5d6b3b;--f1:'Fraunces',serif;--f2:'Karla',sans-serif;--ez:cubic-bezier(.22,1,.36,1);--ez2:cubic-bezier(.16,1,.3,1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f2);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:900;opacity:.55;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+::selection{background:var(--ac);color:var(--bg)}
+#prog{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:0 50%;z-index:1000}
+nav{position:fixed;top:0;left:0;right:0;z-index:800;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px clamp(16px,4vw,40px);background:var(--bg);border-bottom:1px solid var(--bd)}
+@supports (backdrop-filter:blur(10px)){nav{background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px)}}
+.brand{font-family:var(--f1);font-weight:700;font-size:16px;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand em{color:var(--ac);font-style:normal}
+.navcta{flex:none;display:inline-flex;align-items:center;gap:8px;background:var(--ac);color:#fff8f0;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;transition:transform .25s var(--ez)}
+.navcta:hover{transform:translateY(-2px)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;padding:150px 0 76px}
+.hero-bg{position:absolute;inset:0;z-index:0;will-change:transform}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:kb 26s ease-in-out infinite alternate}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 90%,transparent) 0%,color-mix(in srgb,var(--bg) 52%,transparent) 42%,var(--bg) 98%)}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.1)}}
+.hero-in{position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-bottom:26px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--ac)}
+h1{font-family:var(--f1);font-weight:700;font-size:clamp(52px,9.4vw,128px);line-height:.98;letter-spacing:-.025em}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-right:.22em}
+h1 .w>span{display:inline-block;transform:translateY(110%);animation:rise .95s var(--ez2) both}
+h1 em{font-style:italic;color:var(--ac)}
+@keyframes rise{to{transform:translateY(0)}}
+.sub{max-width:560px;margin-top:26px;color:var(--mut);font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 34px}
+.chips span{border:1px solid var(--bd);padding:7px 15px;border-radius:999px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);transition:border-color .3s,color .3s}
+.chips span:hover{border-color:var(--ac);color:var(--ink)}
+.btnrow{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ac);color:#fff8f0;text-decoration:none;padding:15px 30px;border-radius:999px;font-weight:700;font-size:16px;will-change:transform;transition:transform .3s var(--ez),box-shadow .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(0,0,0,.22)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--bd);box-shadow:none}
+.btn.ghost:hover{border-color:var(--ac)}
+.scroll-hint{position:absolute;bottom:26px;right:clamp(16px,4vw,40px);z-index:1;width:1px;height:64px;background:var(--bd)}
+.scroll-hint::after{content:"";position:absolute;top:0;left:-1px;width:3px;height:22px;background:var(--ac);animation:trickle 2.4s var(--ez) infinite}
+@keyframes trickle{0%{transform:translateY(-24px)}100%{transform:translateY(64px)}}
+.ticker{border-block:1px solid var(--bd);padding:15px 0;overflow:hidden}
+.marquee{overflow:hidden}
+.track{display:flex;width:max-content;animation:mq 34s linear infinite;will-change:transform}
+.track span{padding:0 8px;font-family:var(--f1);font-weight:600;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
+.track span i{color:var(--ac);font-style:normal;padding:0 18px}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:clamp(84px,11vw,150px) 0;position:relative}
+.slabel{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--ac);margin-bottom:20px;font-weight:700}
+.slabel::after{content:"";flex:1;height:1px;background:var(--bd)}
+.mask-h{overflow:hidden}
+.mask-h>span{display:block;transform:translateY(105%);transition:transform 1s var(--ez2)}
+.mask-h.in>span{transform:translateY(0)}
+h2{font-family:var(--f1);font-weight:700;font-size:clamp(34px,5.4vw,70px);line-height:1.04;letter-spacing:-.02em}
+h2 em{font-style:italic;color:var(--ac)}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,6vw,84px);align-items:end}
+.big{font-family:var(--f1);font-weight:600;font-size:clamp(25px,3.1vw,44px);line-height:1.28;letter-spacing:-.01em}
+.big b{color:var(--ac);font-weight:600}
+.split p{color:var(--mut);margin-top:22px;max-width:520px}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:48px}
+.b{position:relative;border:1px solid var(--bd);border-radius:18px;padding:28px 26px;grid-column:span 2;overflow:hidden;background:var(--soft);transition:transform .45s var(--ez),border-color .45s}
+.b:hover{transform:translateY(-6px);border-color:var(--ac)}
+.b:nth-child(1),.b:nth-child(2){grid-column:span 3}
+.b:nth-child(6){grid-column:span 6}
+.b .num{position:absolute;top:20px;right:22px;font-family:var(--f1);font-size:12.5px;letter-spacing:.14em;color:var(--ac)}
+.b h3{font-family:var(--f1);font-weight:600;font-size:21px;margin:14px 0 10px}
+.b p{font-size:14.5px;color:var(--mut)}
+.stack{margin-top:52px}
+.scard{position:sticky;top:calc(96px + var(--i) * 18px);border-radius:22px;overflow:hidden;border:1px solid var(--bd);margin-bottom:9vh;box-shadow:0 34px 80px rgba(0,0,0,.18)}
+.scard img{display:block;width:100%;height:min(60vh,540px);object-fit:cover}
+.scard figcaption{position:absolute;left:18px;bottom:16px;background:var(--bg);border:1px solid var(--bd);padding:8px 16px;border-radius:999px;font-size:13px;letter-spacing:.06em}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,26px);margin-top:52px}
+.gallery figure{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--bd)}
+.gallery figure:nth-child(1){grid-column:1/6}
+.gallery figure:nth-child(2){grid-column:6/13;margin-top:44px}
+.gallery figure:nth-child(3){grid-column:1/5;margin-top:-26px}
+.gallery img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform 1s var(--ez)}
+.gallery figure:hover img{transform:scale(1.06)}
+.locs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:48px}
+.loc{display:flex;flex-direction:column;gap:6px;border:1px solid var(--bd);border-radius:18px;padding:24px;background:var(--soft);text-decoration:none;color:var(--ink);transition:transform .45s var(--ez),border-color .45s}
+.loc:hover{transform:translateY(-6px);border-color:var(--ac)}
+.lcity{font-family:var(--f1);font-weight:700;font-size:22px}
+.laddr{font-size:14.5px;color:var(--mut)}
+.lrow{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:8px;font-size:14px}
+.lphone{font-weight:700;color:var(--ac)}
+.lhours{color:var(--mut)}
+.contact .inner{border:1px solid var(--bd);border-radius:26px;padding:clamp(44px,7vw,92px) clamp(24px,5vw,72px);text-align:center;background:var(--soft)}
+.contact h2{margin-bottom:18px}
+.contact .csub{color:var(--mut);max-width:560px;margin:0 auto 38px}
+.contact .btnrow{justify-content:center;margin-top:8px}
+footer{border-top:1px solid var(--bd);padding:56px 0 44px;font-size:14px;color:var(--mut)}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px}
+.fgrid strong{display:block;color:var(--ink);font-family:var(--f1);font-weight:600;letter-spacing:.02em;margin-bottom:10px}
+footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--bd);transition:border-color .3s,color .3s}
+footer a:hover{color:var(--ac);border-color:var(--ac)}
+.fbot{margin-top:40px;padding-top:20px;border-top:1px solid var(--bd);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:850;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:1px solid var(--bd);background:var(--bg)}
+@supports (backdrop-filter:blur(10px)){.callbar{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px)}}
+.callbar a{flex:1;text-align:center;text-decoration:none;padding:13px;border-radius:12px;font-weight:700;font-size:15px}
+.callbar a.call{background:var(--ac);color:#fff8f0}
+.callbar a.mail{border:1px solid var(--bd);color:var(--ink)}
+[data-rv]{opacity:0;transform:translateY(26px);transition:opacity .85s var(--ez),transform .85s var(--ez)}
+[data-rv].in{opacity:1;transform:none}
+[data-tilt]{transform-style:preserve-3d;will-change:transform}
+[data-tilt] img{transform:translateZ(24px)}
+@media (max-width:960px){
+  .split{grid-template-columns:1fr}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .b,.b:nth-child(1),.b:nth-child(2),.b:nth-child(6){grid-column:span 1}
+  .b:nth-child(6){grid-column:span 2}
+  .gallery{grid-template-columns:repeat(6,1fr)}
+  .gallery figure:nth-child(1){grid-column:1/7}
+  .gallery figure:nth-child(2){grid-column:1/7;margin-top:0}
+  .gallery figure:nth-child(3){grid-column:1/4;margin-top:0}
+  .fgrid{grid-template-columns:1fr}
+  .scard{top:calc(84px + var(--i) * 12px)}
+}
+@media (max-width:720px){
+  .callbar{display:flex}
+  body{padding-bottom:78px}
+  .hero{min-height:92svh;padding-bottom:60px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  [data-rv]{opacity:1;transform:none}
+  .mask-h>span{transform:none}
+  h1 .w>span{transform:none}
+}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<nav>
+  <span class="brand">Mandola's <em>Italian Kitchen</em></span>
+  <a class="navcta" href="https://mandolas.com/" target="_blank" rel="noopener">Order Online</a>
+</nav>
+<header class="hero">
+  <div class="hero-bg" data-parw="0.18"><img src="img/biz1.jpg" alt="Food at Mandola's Italian Kitchen"></div>
+  <div class="wrap hero-in">
+    <p class="eyebrow">Fast-Casual Italian &middot; Tampa Bay &amp; Austin</p>
+    <h1><span class="w"><span style="animation-delay:.15s">FRESH</span></span> <span class="w"><span style="animation-delay:.27s"><em>ITALIAN,</em></span></span> <span class="w"><span style="animation-delay:.39s">EVERY DAY</span></span></h1>
+    <p class="sub">Handmade pasta, wood-fired pizza, and Italian favorites made with traditional recipes and high-quality ingredients &mdash; prepared right in front of you.</p>
+    <div class="chips"><span>Handmade Pasta</span><span>Wood-Fired Pizza</span><span>Panini</span><span>Catering</span></div>
+    <div class="btnrow">
+      <a class="btn" href="https://mandolas.com/" target="_blank" rel="noopener" data-mag>Order Online</a>
+      <a class="btn ghost" href="#locations" data-mag>Find a Kitchen</a>
+    </div>
+  </div>
+  <div class="scroll-hint"></div>
+</header>
+<div class="ticker"><div class="marquee"><div class="track"><span>HANDMADE PASTA <i>&#10022;</i></span><span>WOOD-FIRED PIZZA <i>&#10022;</i></span><span>PANINI <i>&#10022;</i></span><span>FRESH SALADS <i>&#10022;</i></span><span>HOUSE-MADE DESSERTS <i>&#10022;</i></span><span>WINE &amp; BEER <i>&#10022;</i></span><span>HANDMADE PASTA <i>&#10022;</i></span><span>WOOD-FIRED PIZZA <i>&#10022;</i></span><span>PANINI <i>&#10022;</i></span><span>FRESH SALADS <i>&#10022;</i></span><span>HOUSE-MADE DESSERTS <i>&#10022;</i></span><span>WINE &amp; BEER <i>&#10022;</i></span></div></div></div>
+<main>
+  <section id="about">
+    <div class="wrap split">
+      <div data-rv>
+        <p class="slabel">Welcome to our kitchen</p>
+        <p class="big">Italian culture and cuisine, served with <b>great food, a bustling atmosphere, and warm hospitality.</b></p>
+      </div>
+      <div data-rv style="transition-delay:.12s">
+        <p>Order at the counter, pick your seat, and watch your meal come together in our open kitchen. It is fast-casual done the Italian way &mdash; traditional recipes, quality ingredients, and the aromas of dinner filling the room while you wait.</p>
+      </div>
+    </div>
+  </section>
+  <section id="menu">
+    <div class="wrap">
+      <p class="slabel">On the menu</p>
+      <h2 class="mask-h" data-rv><span>Made <em>fresh,</em> made daily</span></h2>
+      <div class="bento"><div class="b" data-rv style="transition-delay:0.00s"><span class="num">01</span><h3>Handmade Pasta</h3><p>Traditional recipes, prepared fresh in the open kitchen.</p></div><div class="b" data-rv style="transition-delay:0.06s"><span class="num">02</span><h3>Wood-Fired Pizza</h3><p>Classic Italian pizzas, fired hot and served fast.</p></div><div class="b" data-rv style="transition-delay:0.12s"><span class="num">03</span><h3>Panini</h3><p>Pressed to order on fresh Italian bread.</p></div><div class="b" data-rv style="transition-delay:0.18s"><span class="num">04</span><h3>Soups & Salads</h3><p>Fresh salads and soups, made daily.</p></div><div class="b" data-rv style="transition-delay:0.24s"><span class="num">05</span><h3>House-Made Desserts</h3><p>Italian favorites, made in-house.</p></div><div class="b" data-rv style="transition-delay:0.30s"><span class="num">06</span><h3>Catering & Family Packages</h3><p>Feed the whole table - catering and family package meals to go.</p></div></div>
+    </div>
+  </section>
+  <section id="work">
+    <div class="wrap">
+      <p class="slabel">From the pass</p>
+      <h2 class="mask-h" data-rv><span>Straight from <em>our kitchen</em></span></h2>
+      <div class="stack">
+        <figure class="scard" style="--i:0"><img src="img/biz2.jpg" alt="Dish at Mandola's Italian Kitchen"><figcaption>Handmade pasta &middot; every day</figcaption></figure>
+        <figure class="scard" style="--i:1"><img src="img/biz3.jpg" alt="Pizza at Mandola's Italian Kitchen"><figcaption>Wood-fired pizza</figcaption></figure>
+        <figure class="scard" style="--i:2"><img src="img/biz4.jpg" alt="Food at Mandola's Italian Kitchen"><figcaption>Fresh ingredients, traditional recipes</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="wrap">
+      <p class="slabel">Gallery</p>
+      <h2 class="mask-h" data-rv><span>The <em>Mandola's</em> table</span></h2>
+      <div class="gallery">
+        <figure data-rv data-tilt><img src="img/biz5.jpg" alt="Italian dish at Mandola's"></figure>
+        <figure data-rv data-tilt style="transition-delay:.08s"><img src="img/biz6.jpg" alt="Food at Mandola's Italian Kitchen"></figure>
+        <figure data-rv data-tilt style="transition-delay:.16s"><img src="img/biz3.jpg" alt="Pizza at Mandola's Italian Kitchen"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="locations">
+    <div class="wrap">
+      <p class="slabel">Find us</p>
+      <h2 class="mask-h" data-rv><span>Five kitchens, <em>one family</em></span></h2>
+      <div class="locs"><a class="loc" data-rv style="transition-delay:0.00s" href="https://mandolas.com/locations/" target="_blank" rel="noopener"><span class="lcity">Oldsmar</span><span class="laddr">3138 Tampa Rd, Oldsmar, FL 34677</span><span class="lrow"><span class="lphone">(813) 729-8741</span><span class="lhours">Open every day 11am - 9pm</span></span></a><a class="loc" data-rv style="transition-delay:0.07s" href="https://mandolas.com/locations/" target="_blank" rel="noopener"><span class="lcity">Odessa</span><span class="laddr">16080 Preserve Marketplace Blvd, Odessa, FL 33556</span><span class="lrow"><span class="lphone">(813) 644-3002</span><span class="lhours">Open every day 11am - 9pm</span></span></a><a class="loc" data-rv style="transition-delay:0.14s" href="https://mandolas.com/locations/" target="_blank" rel="noopener"><span class="lcity">Carrollwood</span><span class="laddr">14703 N Dale Mabry Hwy, Tampa, FL 33618</span><span class="lrow"><span class="lphone">(813) 535-6037</span><span class="lhours">Open every day 11am - 9pm</span></span></a><a class="loc" data-rv style="transition-delay:0.21s" href="https://mandolas.com/locations/" target="_blank" rel="noopener"><span class="lcity">Riverview</span><span class="laddr">12926 US Hwy 301 S, Bldg. 100 Ste. C, Riverview, FL 33579</span><span class="lrow"><span class="lphone">(813) 755-3587</span><span class="lhours">Sun-Thu 11am - 9pm &middot; Fri-Sat 11am - 10pm</span></span></a><a class="loc" data-rv style="transition-delay:0.28s" href="https://mandolas.com/locations/" target="_blank" rel="noopener"><span class="lcity">The Triangle &middot; Austin</span><span class="laddr">4700 W Guadalupe St #12, Austin, TX 78751</span><span class="lrow"><span class="lphone">(512) 419-9700</span><span class="lhours">Mon-Sat 11am - 10pm &middot; Sun 11am - 9pm</span></span></a></div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="inner" data-rv>
+        <h2 class="mask-h" data-rv><span>Come <em>hungry.</em></span></h2>
+        <p class="csub">Lunch, dinner, takeout, or catering &mdash; order at the counter and we will handle the rest. Wine, beer, and happy hour at most locations.</p>
+        <div class="btnrow">
+          <a class="btn" href="https://mandolas.com/" target="_blank" rel="noopener" data-mag>Order Online</a>
+          <a class="btn ghost" href="#locations" data-mag>Locations &amp; Hours</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap fgrid">
+    <div><strong>Mandola's Italian Kitchen</strong>Fast-casual Italian - handmade pasta, wood-fired pizza, panini, salads, and house-made desserts. Serving the Tampa Bay area and Austin, TX.</div>
+    <div><strong>Order</strong><a href="https://mandolas.com/" target="_blank" rel="noopener">mandolas.com</a></div>
+    <div><strong>Hours</strong>Open every day from 11am (hours vary by location)</div>
+  </div>
+  <div class="wrap fbot"><span>Independent fan site &middot; info via mandolas.com</span><span>Tampa Bay, FL &middot; Austin, TX</span></div>
+</footer>
+<div class="callbar">
+  <a class="call" href="https://mandolas.com/" target="_blank" rel="noopener">Order Online</a>
+  <a class="mail" href="#locations">Locations</a>
+</div>
+<script>
+function revealAll(){document.querySelectorAll('[data-rv],[data-rvview]').forEach(el=>el.classList.add('in'));document.querySelectorAll('.mask-h').forEach(el=>el.classList.add('in'));}
+try{
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    }),{threshold:.16,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('[data-rv],[data-rvview]').forEach(el=>io.observe(el));
+  } else revealAll();
+}catch(err){revealAll();}
+setTimeout(()=>{document.querySelectorAll('[data-rv]:not(.in),.mask-h:not(.in)').forEach(el=>{
+  const r=el.getBoundingClientRect();
+  if(r.top<innerHeight*1.5) el.classList.add('in');});},1200);
+addEventListener('error',revealAll);
+const prog=document.getElementById('prog');
+const pars=[...document.querySelectorAll('[data-parw]')];
+addEventListener('scroll',()=>{const y=scrollY;
+  const h=document.documentElement,m=h.scrollHeight-innerHeight;
+  if(prog){prog.style.transform=`scaleX(${m>0?Math.min(1,y/m):0})`;}
+  pars.forEach(el=>{el.style.transform=`translateY(${y*parseFloat(el.dataset.parw)}px) scale(1.08)`});
+},{passive:true});
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduced){
+  document.querySelectorAll('[data-mag]').forEach(b=>{
+    b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();
+      b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*0.18}px,${(e.clientY-r.top-r.height/2)*0.28}px)`;});
+    b.addEventListener('mouseleave',()=>{b.style.transform='';});
+  });
+  document.querySelectorAll('[data-tilt]').forEach(card=>{
+    card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();
+      const rx=((e.clientY-r.top)/r.height-0.5)*-7,ry=((e.clientX-r.left)/r.width-0.5)*7;
+      card.style.transform=`perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;});
+    card.addEventListener('mouseleave',()=>{card.style.transform='';});
+  });
+}
+</script>
+</body>
+</html>
