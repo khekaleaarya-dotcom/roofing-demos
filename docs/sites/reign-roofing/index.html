@@ -8,17 +8,17 @@
 <meta property="og:title" content="Reign Roofing — Roofing in Sugar Land, TX">
 <meta property="og:description" content="Roof repair, replacement and storm damage. Call (281) 301-5477.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/biz1.jpg">
+<meta property="og:image" content="img/art.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M4 34L32 8l28 26' fill='none' stroke='%23FF6B2C' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M14 36v20h36V36' fill='none' stroke='%23FF6B2C' stroke-width='6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700;800:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbfbf9;--ink:#111111;--mut:#55554e;--bd:#17171414;--soft:#f1f0ea;--ac:#ffd400;--ac2:#111111;--f1:'Archivo Black',ui-sans-serif,system-ui,sans-serif;--f2:'Archivo',ui-sans-serif,system-ui,sans-serif;--fs:0.97;--ez:cubic-bezier(.22,1,.36,1);--ez2:cubic-bezier(.16,1,.3,1)}
+:root{--bg:#fbfbf9;--ink:#111111;--mut:#55554e;--bd:#17171414;--soft:#f1f0ea;--ac:#ffd400;--ac2:#111111;--onac:#111111;--f1:'Archivo Black',ui-sans-serif,system-ui,sans-serif;--f2:'Archivo',ui-sans-serif,system-ui,sans-serif;--fs:0.97;--ez:cubic-bezier(.22,1,.36,1);--ez2:cubic-bezier(.16,1,.3,1)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--f2);font-size:calc(16.5px * var(--fs));line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-::selection{background:var(--ac);color:var(--bg)}
+::selection{background:var(--ac);color:var(--onac)}
 a{color:inherit}
 img{max-width:100%;display:block}
 :focus-visible{outline:3px solid var(--ac);outline-offset:3px;border-radius:2px}
@@ -37,7 +37,7 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:16px;paddi
 .navlinks a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ez)}
 .navlinks a:hover{color:var(--ink)}
 .navlinks a:hover::after{transform:scaleX(1);transform-origin:left}
-.callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--ac);color:var(--bg);font-family:var(--f1);font-weight:700;font-size:14.5px;letter-spacing:.02em;text-decoration:none;padding:11px 18px;border-radius:999px;transition:transform .3s var(--ez),box-shadow .3s}
+.callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--ac);color:var(--onac);font-family:var(--f1);font-weight:700;font-size:14.5px;letter-spacing:.02em;text-decoration:none;padding:11px 18px;border-radius:999px;transition:transform .3s var(--ez),box-shadow .3s}
 .callbtn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(255,212,0,0.35)}
 @media(max-width:860px){.navlinks{display:none}}
 
@@ -58,7 +58,7 @@ h1.in .wi i{opacity:1;transform:translateY(0)}
 .scr{color:var(--ac)}
 .herocta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;opacity:0;transform:translateY(16px);transition:all .9s var(--ez) .6s}
 .hero.in .herocta{opacity:1;transform:none}
-.big{display:inline-flex;align-items:center;gap:10px;background:var(--ac);color:var(--bg);font-family:var(--f1);font-weight:700;font-size:17px;letter-spacing:.02em;text-decoration:none;padding:17px 30px;border-radius:999px;transition:transform .3s var(--ez),box-shadow .3s}
+.big{display:inline-flex;align-items:center;gap:10px;background:var(--ac);color:var(--onac);font-family:var(--f1);font-weight:700;font-size:17px;letter-spacing:.02em;text-decoration:none;padding:17px 30px;border-radius:999px;transition:transform .3s var(--ez),box-shadow .3s}
 .big:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(255,212,0,0.35)}
 .ghost{display:inline-flex;align-items:center;gap:10px;border:1.5px solid var(--bd);color:var(--ink);font-family:var(--f1);font-weight:600;font-size:16px;text-decoration:none;padding:16px 28px;border-radius:999px;transition:border-color .3s,transform .3s var(--ez)}
 .ghost:hover{border-color:var(--ac);transform:translateY(-3px)}
@@ -118,7 +118,7 @@ h2{font-family:var(--f1);font-weight:400;font-size:clamp(34px,5.2vw,66px);line-h
 .ba .top img{width:200%;max-width:none}
 .ba input[type="range"]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
 .ba .handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--ac);transform:translateX(-50%);pointer-events:none}
-.ba .handle::after{content:"⇔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--ac);color:var(--bg);display:grid;place-items:center;font-size:20px;font-weight:700}
+.ba .handle::after{content:"⇔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--ac);color:var(--onac);display:grid;place-items:center;font-size:20px;font-weight:700}
 .ba .tag{position:absolute;top:14px;font-family:var(--f1);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(251,251,249,0.85);color:var(--ink);padding:6px 12px;border-radius:999px}
 .ba .tag.l{left:14px}.ba .tag.r{right:14px}
 
@@ -148,7 +148,7 @@ footer a:hover{color:var(--ac)}
 
 /* mobile call bar */
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;background:var(--ac);text-align:center}
-.callbar a{display:block;padding:16px;color:var(--bg);font-family:var(--f1);font-weight:700;font-size:17px;text-decoration:none;letter-spacing:.02em}
+.callbar a{display:block;padding:16px;color:var(--onac);font-family:var(--f1);font-weight:700;font-size:17px;text-decoration:none;letter-spacing:.02em}
 @media(max-width:860px){.callbar{display:block}footer{padding-bottom:150px}}
 
 @media (prefers-reduced-motion: reduce){
@@ -182,7 +182,7 @@ footer a:hover{color:var(--ac)}
 
 <main id="top">
 <section class="hero" id="hero">
-  <div class="bgimg" data-parw="0.18"><img src="img/biz1.jpg" alt="Roofing work by Reign Roofing in Sugar Land, TX"></div>
+  <div class="bgimg" data-parw="0.18"><img src="img/art.jpg" alt="Roofing work by Reign Roofing in Sugar Land, TX"></div>
   <div class="wrap">
     <h1 data-split><span class="w"><span class="wi" style="transition-delay:0.00s"><i>S</i><i>T</i><i>O</i><i>R</i><i>M</i></span></span> <span class="w"><span class="wi" style="transition-delay:0.07s"><i>H</i><i>I</i><i>T</i><i>S</i><i>.</i></span></span> <span class="w"><span class="wi" style="transition-delay:0.14s"><i>W</i><i>E</i></span></span> <span class="w"><span class="wi" style="transition-delay:0.21s"><span class="scr" data-word="ANSWER">ANSWER</span><i>.</i></span></span></h1>
     <p class="herosub">Reign Roofing — fast, careful roof work. Roof repair, replacement and storm damage in Sugar Land, TX.</p>
@@ -220,7 +220,7 @@ footer a:hover{color:var(--ac)}
     <p class="kicker" data-rv>Recent work</p>
     <h2 data-rv>Up on the roof, so you don't have to be</h2>
     <div class="stackwrap" style="margin-top:48px">
-      <figure class="scard" style="--i:0"><img src="img/biz1.jpg" alt="Roofing project 1 by Reign Roofing"><figcaption>Project 1 <small>Sugar Land</small></figcaption></figure>
+      <figure class="scard" style="--i:0"><img src="img/art.jpg" alt="Roofing project 1 by Reign Roofing"><figcaption>Project 1 <small>Sugar Land</small></figcaption></figure>
     </div>
   </div>
 </section>
@@ -231,8 +231,8 @@ footer a:hover{color:var(--ac)}
     <h2 data-rv style="margin-bottom:14px">Drag to see the difference</h2>
     <p class="lead-p" data-rv style="margin-bottom:40px">Real repair and replacement work — slide to compare.</p>
     <div class="ba" data-rv>
-      <img src="img/biz1.jpg" alt="Roof before work by Reign Roofing">
-      <div class="top"><img src="img/biz1.jpg" alt="Roof after work by Reign Roofing"></div>
+      <img src="img/art.jpg" alt="Roof before work by Reign Roofing">
+      <div class="top"><img src="img/art.jpg" alt="Roof after work by Reign Roofing"></div>
       <div class="handle" aria-hidden="true"></div>
       <span class="tag l">Before</span><span class="tag r">After</span>
       <label><input type="range" min="0" max="100" value="50" aria-label="Compare roof before and after"></label>
@@ -245,7 +245,7 @@ footer a:hover{color:var(--ac)}
     <p class="kicker" data-rv>From the job sites</p>
     <h2 data-rv>Every roof tells a story</h2>
     <div class="cards" style="margin-top:44px">
-      <figure data-rv data-tilt style="transition-delay:0.00s"><img src="img/biz1.jpg" alt="Roofing work 1 by Reign Roofing"><figcaption>Job site photo 1</figcaption></figure>
+      <figure data-rv data-tilt style="transition-delay:0.00s"><img src="img/art.jpg" alt="Roofing work 1 by Reign Roofing"><figcaption>Job site photo 1</figcaption></figure>
     </div>
   </div>
 </section>
