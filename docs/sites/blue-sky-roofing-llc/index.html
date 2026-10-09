@@ -8,7 +8,7 @@
 <meta property="og:title" content="Blue Sky Roofing LLC — Roofing in Mesa, AZ">
 <meta property="og:description" content="Roof repair, replacement and storm damage. Call (480) 232-5846.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/biz1.jpg">
+<meta property="og:image" content="img/vivid1.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M4 34L32 8l28 26' fill='none' stroke='%23FF6B2C' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M14 36v20h36V36' fill='none' stroke='%23FF6B2C' stroke-width='6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,14 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:16px;paddi
 /* hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:130px 0 64px;overflow:hidden}
 .hero .bgimg{position:absolute;inset:0;z-index:-2}
-.hero .bgimg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.85) saturate(1.05);animation:kb 26s ease-in-out infinite alternate}
+.hero .bgimg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.72) saturate(1.35) contrast(1.06);animation:kb 26s ease-in-out infinite alternate}
+.fx{position:absolute;inset:0;z-index:-1;pointer-events:none;mix-blend-mode:screen}
+h1[data-split] .w:nth-of-type(4n+1) i{color:#ffb703}
+h1[data-split] .w:nth-of-type(4n+2) i{color:#ff2e88}
+h1[data-split] .w:nth-of-type(4n+3) i{color:#22d3ee}
+h1[data-split] .w:nth-of-type(4n) i{color:#8b5cf6}
+h1[data-split] .scr{background:linear-gradient(180deg,#ffd166 0%,#ff6b35 38%,#ff2e88 72%,#7c4dff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@media (prefers-reduced-motion:reduce){h1[data-split] .scr{-webkit-text-fill-color:currentColor;background:none}}
 @keyframes kb{from{transform:scale(1.04)}to{transform:scale(1.16) translate(-1.5%,-1%)}}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(251,251,249,0.1) 0%,rgba(251,251,249,0.55) 62%,var(--bg) 100%)}
 h1{font-family:var(--f1);font-weight:400;font-size:clamp(52px,9.4vw,128px);line-height:.99;letter-spacing:.005em;text-transform:uppercase;max-width:15ch}
@@ -182,7 +189,8 @@ footer a:hover{color:var(--ac)}
 
 <main id="top">
 <section class="hero" id="hero">
-  <div class="bgimg" data-parw="0.18"><img src="img/biz1.jpg" alt="Roofing work by Blue Sky Roofing LLC in Mesa, AZ"></div>
+  <div class="bgimg" data-parw="0.18"><img src="img/vivid1.jpg" alt="Roofing work by Blue Sky Roofing LLC in Mesa, AZ"></div>
+  <canvas class="fx" aria-hidden="true"></canvas>
   <div class="wrap">
     <h1 data-split><span class="w"><span class="wi" style="transition-delay:0.00s"><i>S</i><i>T</i><i>O</i><i>R</i><i>M</i></span></span> <span class="w"><span class="wi" style="transition-delay:0.07s"><i>H</i><i>I</i><i>T</i><i>S</i><i>.</i></span></span> <span class="w"><span class="wi" style="transition-delay:0.14s"><i>W</i><i>E</i></span></span> <span class="w"><span class="wi" style="transition-delay:0.21s"><span class="scr" data-word="ANSWER">ANSWER</span><i>.</i></span></span></h1>
     <p class="herosub">Blue Sky Roofing LLC — fast, careful roof work. Roof repair, replacement and storm damage in Mesa, AZ.</p>
@@ -220,7 +228,7 @@ footer a:hover{color:var(--ac)}
     <p class="kicker" data-rv>Recent work</p>
     <h2 data-rv>Up on the roof, so you don't have to be</h2>
     <div class="stackwrap" style="margin-top:48px">
-      <figure class="scard" style="--i:0"><img src="img/biz1.jpg" alt="Roofing project 1 by Blue Sky Roofing LLC"><figcaption>Project 1 <small>Mesa</small></figcaption></figure><figure class="scard" style="--i:1"><img src="img/stock1.jpg" alt="Roofing project 2 by Blue Sky Roofing LLC"><figcaption>Project 2 <small>Mesa</small></figcaption></figure><figure class="scard" style="--i:2"><img src="img/stock2.jpg" alt="Roofing project 3 by Blue Sky Roofing LLC"><figcaption>Project 3 <small>Mesa</small></figcaption></figure><figure class="scard" style="--i:3"><img src="img/stock3.jpg" alt="Roofing project 4 by Blue Sky Roofing LLC"><figcaption>Project 4 <small>Mesa</small></figcaption></figure>
+      <figure class="scard" style="--i:0"><img src="img/vivid1.jpg" alt="Roofing project 1 by Blue Sky Roofing LLC"><figcaption>Project 1 <small>Mesa</small></figcaption></figure><figure class="scard" style="--i:1"><img src="img/vivid2.jpg" alt="Roofing project 2 by Blue Sky Roofing LLC"><figcaption>Project 2 <small>Mesa</small></figcaption></figure><figure class="scard" style="--i:2"><img src="img/vivid3.jpg" alt="Roofing project 3 by Blue Sky Roofing LLC"><figcaption>Project 3 <small>Mesa</small></figcaption></figure><figure class="scard" style="--i:3"><img src="img/vivid4.jpg" alt="Roofing project 4 by Blue Sky Roofing LLC"><figcaption>Project 4 <small>Mesa</small></figcaption></figure>
     </div>
   </div>
 </section>
@@ -232,7 +240,7 @@ footer a:hover{color:var(--ac)}
     <p class="kicker" data-rv>From the job sites</p>
     <h2 data-rv>Every roof tells a story</h2>
     <div class="cards" style="margin-top:44px">
-      <figure data-rv data-tilt style="transition-delay:0.00s"><img src="img/biz1.jpg" alt="Roofing work 1 by Blue Sky Roofing LLC"><figcaption>Job site photo 1</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.07s"><img src="img/stock1.jpg" alt="Roofing work 2 by Blue Sky Roofing LLC"><figcaption>Job site photo 2</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.14s"><img src="img/stock2.jpg" alt="Roofing work 3 by Blue Sky Roofing LLC"><figcaption>Job site photo 3</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.21s"><img src="img/stock3.jpg" alt="Roofing work 4 by Blue Sky Roofing LLC"><figcaption>Job site photo 4</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.28s"><img src="img/stock4.jpg" alt="Roofing work 5 by Blue Sky Roofing LLC"><figcaption>Job site photo 5</figcaption></figure>
+      <figure data-rv data-tilt style="transition-delay:0.00s"><img src="img/vivid1.jpg" alt="Roofing work 1 by Blue Sky Roofing LLC"><figcaption>Job site photo 1</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.07s"><img src="img/vivid2.jpg" alt="Roofing work 2 by Blue Sky Roofing LLC"><figcaption>Job site photo 2</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.14s"><img src="img/vivid3.jpg" alt="Roofing work 3 by Blue Sky Roofing LLC"><figcaption>Job site photo 3</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.21s"><img src="img/vivid4.jpg" alt="Roofing work 4 by Blue Sky Roofing LLC"><figcaption>Job site photo 4</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.28s"><img src="img/biz1.jpg" alt="Roofing work 5 by Blue Sky Roofing LLC"><figcaption>Job site photo 5</figcaption></figure>
     </div>
   </div>
 </section>
@@ -393,6 +401,33 @@ if (!reduce && window.matchMedia("(pointer:fine)").matches){
       el.addEventListener("mouseleave", function(){ el.style.transform = ""; });
     })(tilts[t]);
   }
+}
+
+/* cinematic hero light field - drifting bokeh + light sweep (video-like) */
+var fxc = document.querySelector(".fx");
+if (fxc && !reduce){
+  var fx = fxc.getContext("2d"), W, H, P = [], sweep = -0.4;
+  var COLS = ["255,209,102","255,107,53","255,46,136","124,77,255","34,211,238"];
+  var rsfx = function(){ W = fxc.width = fxc.offsetWidth; H = fxc.height = fxc.offsetHeight;
+    P = []; for (var i=0;i<18;i++) P.push({x:Math.random()*W,y:Math.random()*H,
+      r:18+Math.random()*70,c:COLS[i%COLS.length],vx:(Math.random()-.5)*.18,
+      vy:-.05-Math.random()*.12,a:.03+Math.random()*.05}); };
+  rsfx(); window.addEventListener("resize", rsfx);
+  (function tick(){
+    fx.clearRect(0,0,W,H);
+    for (var i=0;i<P.length;i++){ var p=P[i]; p.x+=p.vx; p.y+=p.vy;
+      if (p.y<-p.r){p.y=H+p.r;p.x=Math.random()*W}
+      if (p.x<-p.r) p.x=W+p.r; if (p.x>W+p.r) p.x=-p.r;
+      var g=fx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);
+      g.addColorStop(0,"rgba("+p.c+","+p.a+")"); g.addColorStop(1,"rgba("+p.c+",0)");
+      fx.fillStyle=g; fx.beginPath(); fx.arc(p.x,p.y,p.r,0,7); fx.fill(); }
+    sweep += 0.0035; if (sweep>1.4) sweep=-0.4;
+    var sx=sweep*W, lg=fx.createLinearGradient(sx-140,0,sx+140,0);
+    lg.addColorStop(0,"rgba(255,255,255,0)"); lg.addColorStop(.5,"rgba(255,255,255,.05)");
+    lg.addColorStop(1,"rgba(255,255,255,0)");
+    fx.fillStyle=lg; fx.fillRect(sx-140,0,280,H);
+    requestAnimationFrame(tick);
+  })();
 }
 
 /* cursor glow (dark themes only) */
