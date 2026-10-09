@@ -46,8 +46,12 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:16px;paddi
 .hero .bgimg{position:absolute;inset:0;z-index:-2}
 .hero .bgimg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.72) saturate(1.35) contrast(1.06);animation:kb 26s ease-in-out infinite alternate}
 .fx{position:absolute;inset:0;z-index:-1;pointer-events:none;mix-blend-mode:screen}
-h1[data-split] i,h1[data-split] .scr{background:linear-gradient(180deg,#ffd166 0%,#ff6b35 38%,#ff2e88 72%,#7c4dff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-@media (prefers-reduced-motion:reduce){h1[data-split] i,h1[data-split] .scr{-webkit-text-fill-color:currentColor;background:none}}
+h1[data-split] .w:nth-of-type(4n+1) i{color:#ffb703}
+h1[data-split] .w:nth-of-type(4n+2) i{color:#ff2e88}
+h1[data-split] .w:nth-of-type(4n+3) i{color:#22d3ee}
+h1[data-split] .w:nth-of-type(4n) i{color:#8b5cf6}
+h1[data-split] .scr{background:linear-gradient(180deg,#ffd166 0%,#ff6b35 38%,#ff2e88 72%,#7c4dff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@media (prefers-reduced-motion:reduce){h1[data-split] .scr{-webkit-text-fill-color:currentColor;background:none}}
 @keyframes kb{from{transform:scale(1.04)}to{transform:scale(1.16) translate(-1.5%,-1%)}}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(251,251,249,0.1) 0%,rgba(251,251,249,0.55) 62%,var(--bg) 100%)}
 h1{font-family:var(--f1);font-weight:400;font-size:clamp(52px,9.4vw,128px);line-height:.99;letter-spacing:.005em;text-transform:uppercase;max-width:15ch}
@@ -224,7 +228,7 @@ footer a:hover{color:var(--ac)}
     <p class="kicker" data-rv>Recent work</p>
     <h2 data-rv>Up on the roof, so you don't have to be</h2>
     <div class="stackwrap" style="margin-top:48px">
-      <figure class="scard" style="--i:0"><img src="img/vivid1.jpg" alt="Roofing project 1 by Gouge Quality Roofing"><figcaption>Project 1 <small>Amanda</small></figcaption></figure><figure class="scard" style="--i:1"><img src="img/vivid2.jpg" alt="Roofing project 2 by Gouge Quality Roofing"><figcaption>Project 2 <small>Amanda</small></figcaption></figure><figure class="scard" style="--i:2"><img src="img/biz1.jpg" alt="Roofing project 3 by Gouge Quality Roofing"><figcaption>Project 3 <small>Amanda</small></figcaption></figure><figure class="scard" style="--i:3"><img src="img/stock1.jpg" alt="Roofing project 4 by Gouge Quality Roofing"><figcaption>Project 4 <small>Amanda</small></figcaption></figure>
+      <figure class="scard" style="--i:0"><img src="img/vivid1.jpg" alt="Roofing project 1 by Gouge Quality Roofing"><figcaption>Project 1 <small>Amanda</small></figcaption></figure><figure class="scard" style="--i:1"><img src="img/vivid2.jpg" alt="Roofing project 2 by Gouge Quality Roofing"><figcaption>Project 2 <small>Amanda</small></figcaption></figure><figure class="scard" style="--i:2"><img src="img/biz1.jpg" alt="Roofing project 3 by Gouge Quality Roofing"><figcaption>Project 3 <small>Amanda</small></figcaption></figure><figure class="scard" style="--i:3"><img src="img/biz2.jpg" alt="Roofing project 4 by Gouge Quality Roofing"><figcaption>Project 4 <small>Amanda</small></figcaption></figure>
     </div>
   </div>
 </section>
@@ -236,7 +240,7 @@ footer a:hover{color:var(--ac)}
     <p class="kicker" data-rv>From the job sites</p>
     <h2 data-rv>Every roof tells a story</h2>
     <div class="cards" style="margin-top:44px">
-      <figure data-rv data-tilt style="transition-delay:0.00s"><img src="img/vivid1.jpg" alt="Roofing work 1 by Gouge Quality Roofing"><figcaption>Job site photo 1</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.07s"><img src="img/vivid2.jpg" alt="Roofing work 2 by Gouge Quality Roofing"><figcaption>Job site photo 2</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.14s"><img src="img/biz1.jpg" alt="Roofing work 3 by Gouge Quality Roofing"><figcaption>Job site photo 3</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.21s"><img src="img/stock1.jpg" alt="Roofing work 4 by Gouge Quality Roofing"><figcaption>Job site photo 4</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.28s"><img src="img/stock2.jpg" alt="Roofing work 5 by Gouge Quality Roofing"><figcaption>Job site photo 5</figcaption></figure>
+      <figure data-rv data-tilt style="transition-delay:0.00s"><img src="img/vivid1.jpg" alt="Roofing work 1 by Gouge Quality Roofing"><figcaption>Job site photo 1</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.07s"><img src="img/vivid2.jpg" alt="Roofing work 2 by Gouge Quality Roofing"><figcaption>Job site photo 2</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.14s"><img src="img/biz1.jpg" alt="Roofing work 3 by Gouge Quality Roofing"><figcaption>Job site photo 3</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.21s"><img src="img/biz2.jpg" alt="Roofing work 4 by Gouge Quality Roofing"><figcaption>Job site photo 4</figcaption></figure><figure data-rv data-tilt style="transition-delay:0.28s"><img src="img/biz3.jpg" alt="Roofing work 5 by Gouge Quality Roofing"><figcaption>Job site photo 5</figcaption></figure>
     </div>
   </div>
 </section>
