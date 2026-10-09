@@ -44,11 +44,11 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:16px;paddi
 /* hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:130px 0 64px;overflow:hidden}
 .hero .bgimg{position:absolute;inset:0;z-index:-2}
-.hero .bgimg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.85) saturate(1.35) contrast(1.06);animation:kb 26s ease-in-out infinite alternate}
+.hero .bgimg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.72) saturate(1.35) contrast(1.06);animation:kb 26s ease-in-out infinite alternate}
 .fx{position:absolute;inset:0;z-index:-1;pointer-events:none;mix-blend-mode:screen}
-h1[data-split],h1[data-split] *{background:linear-gradient(97deg,var(--ink) 0%,#ffd166 20%,#ff6b35 38%,#ff2e88 56%,#7c4dff 74%,#22d3ee 90%,var(--ink) 100%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shinetxt 9s linear infinite}
-@keyframes shinetxt{to{background-position:260% 0}}
-@media (prefers-reduced-motion:reduce){h1[data-split],h1[data-split] *{animation:none;-webkit-text-fill-color:currentColor;background:none}}
+h1[data-split] .wi{background:linear-gradient(97deg,#ffd166 0%,#ff6b35 26%,#ff2e88 50%,#7c4dff 74%,#22d3ee 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shinetxt 9s linear infinite}
+@keyframes shinetxt{to{background-position:220% 0}}
+@media (prefers-reduced-motion:reduce){h1[data-split] .wi{animation:none;-webkit-text-fill-color:currentColor;background:none}}
 @keyframes kb{from{transform:scale(1.04)}to{transform:scale(1.16) translate(-1.5%,-1%)}}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(251,251,249,0.1) 0%,rgba(251,251,249,0.55) 62%,var(--bg) 100%)}
 h1{font-family:var(--f1);font-weight:400;font-size:clamp(52px,9.4vw,128px);line-height:.99;letter-spacing:.005em;text-transform:uppercase;max-width:15ch}
@@ -406,9 +406,9 @@ if (fxc && !reduce){
   var fx = fxc.getContext("2d"), W, H, P = [], sweep = -0.4;
   var COLS = ["255,209,102","255,107,53","255,46,136","124,77,255","34,211,238"];
   var rsfx = function(){ W = fxc.width = fxc.offsetWidth; H = fxc.height = fxc.offsetHeight;
-    P = []; for (var i=0;i<26;i++) P.push({x:Math.random()*W,y:Math.random()*H,
+    P = []; for (var i=0;i<18;i++) P.push({x:Math.random()*W,y:Math.random()*H,
       r:18+Math.random()*70,c:COLS[i%COLS.length],vx:(Math.random()-.5)*.18,
-      vy:-.05-Math.random()*.12,a:.05+Math.random()*.10}); };
+      vy:-.05-Math.random()*.12,a:.03+Math.random()*.05}); };
   rsfx(); window.addEventListener("resize", rsfx);
   (function tick(){
     fx.clearRect(0,0,W,H);
@@ -420,7 +420,7 @@ if (fxc && !reduce){
       fx.fillStyle=g; fx.beginPath(); fx.arc(p.x,p.y,p.r,0,7); fx.fill(); }
     sweep += 0.0035; if (sweep>1.4) sweep=-0.4;
     var sx=sweep*W, lg=fx.createLinearGradient(sx-140,0,sx+140,0);
-    lg.addColorStop(0,"rgba(255,255,255,0)"); lg.addColorStop(.5,"rgba(255,255,255,.07)");
+    lg.addColorStop(0,"rgba(255,255,255,0)"); lg.addColorStop(.5,"rgba(255,255,255,.05)");
     lg.addColorStop(1,"rgba(255,255,255,0)");
     fx.fillStyle=lg; fx.fillRect(sx-140,0,280,H);
     requestAnimationFrame(tick);
